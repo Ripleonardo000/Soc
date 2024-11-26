@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.Inicio"
+             Title="Inicio">
+
+    <Grid>
+        <!-- Imagen de fondo -->
+        <Image Source="imagen.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand" />
+
+        <!-- Contenido superpuesto -->
+        <ScrollView>
+            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+
+                <!-- Título principal -->
+                <Label Text="¡Bienvenido a la página de fútbol!"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Margin="0,20,0,0" />
+
+                <!-- Subtítulo -->
+                <Label Text="Explora información sobre clubes y jugadores en las pestañas."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
