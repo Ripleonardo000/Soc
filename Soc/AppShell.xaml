@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="soc.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:soc"
-    Shell.FlyoutBehavior="Disabled"
-    Title="soc">
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:soc"
+       x:Class="soc.AppShell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Configuración de pestañas -->
+    <TabBar>
+        <!-- Primera pestaña: Inicio -->
+        <ShellContent Title="Inicio"
+                      
+                      ContentTemplate="{DataTemplate local:Inicio}" />
+
+        <!-- Segunda pestaña: Ejemplo -->
+        <ShellContent Title="Clubes"
+                      
+                      ContentTemplate="{DataTemplate local:ClubesPage}" />
+
+        <!-- Tercera pestaña: Jugadores -->
+        <ShellContent Title="Jugadores"
+                      
+                      ContentTemplate="{DataTemplate local:JugadoresPage}" />
+    </TabBar>
 
 </Shell>
