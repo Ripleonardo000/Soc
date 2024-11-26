@@ -5,16 +5,60 @@
              Title="{Binding LigaNombre}">
 
     <StackLayout Padding="20">
+
+        
+
         <!-- Título de la liga -->
         <Label Text="{Binding LigaNombre}"
                FontSize="24"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
 
+        
+        
+        <!-- Imagen de la liga -->
+        <Image Source="{Binding LigaImagen}" 
+               Aspect="AspectFill" 
+              
+              WidthRequest="200" 
+              HeightRequest="200" 
+
+
+
+
+
+            HorizontalOptions="Center" />
+
+
+
+
+
+
         <!-- Aquí se muestra la descripción o detalles de la liga -->
         <Label Text="{Binding LigaDescripcion}"
                FontSize="18"
                TextColor="Gray"
                HorizontalOptions="Center" />
+
+
+        <!-- Nueva sección para Historia -->
+        <Label Text="Historia" FontSize="20" FontAttributes="Bold" Margin="0,20,0,5" />
+        <Label Text="{Binding LigaHistoria}" FontSize="16" />
+
+        <!-- Nueva sección para Datos Importantes -->
+        <Label Text="Datos Importantes" FontSize="20" FontAttributes="Bold" Margin="0,20,0,5" />
+        <Label Text="{Binding LigaDatosImportantes}" FontSize="16" />
+
+
+
+
+        <!-- Máximos Goleadores -->
+        <Label Text="Máximos Goleadores" FontSize="20" FontAttributes="Bold" Margin="0,20,0,5" />
+        <Label Text="{Binding MaximosGoleadores}" FontSize="16" />
+
+        <!-- Máximos Asistentes -->
+        <Label Text="Máximos Asistentes" FontSize="20" FontAttributes="Bold" Margin="0,20,0,5" />
+        <Label Text="{Binding MaximosAsistentes}" FontSize="16" />
     </StackLayout>
+
 </ContentPage>
