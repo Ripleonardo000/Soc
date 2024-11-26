@@ -20,6 +20,11 @@
         <ShellContent Title="Jugadores"
                       
                       ContentTemplate="{DataTemplate local:JugadoresPage}" />
+
+
+        <ShellContent Title="Ligas"
+                  
+                  ContentTemplate="{DataTemplate local:LigasPage}" />
     </TabBar>
 
 </Shell>

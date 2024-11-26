@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.LigasPage"
+             Title="Ligas">
+
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="Explora las ligas más importantes del mundo"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="Aquí puedes encontrar información sobre las ligas de fútbol destacadas como Premier League, entre otras."
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="Gray"
+               Margin="0,20,0,0" />
+
+
+        <!-- CollectionView que muestra los botones -->
+        <CollectionView ItemsSource="{Binding Ligas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Button Text="{Binding}" 
+                            FontSize="20"
+                            TextColor="White"
+                            BackgroundColor="RoyalBlue"
+                            Padding="10"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateCommand}"
+                            CommandParameter="{Binding}" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+
+
+
+
+</ContentPage>
