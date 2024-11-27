@@ -25,6 +25,10 @@
         <ShellContent Title="Ligas"
                   
                   ContentTemplate="{DataTemplate local:LigasPage}" />
+
+        <ShellContent Title="Proximos Partidos"
+          
+          ContentTemplate="{DataTemplate local:ProximosPartidos}" />
     </TabBar>
 
 </Shell>
