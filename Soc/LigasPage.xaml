@@ -22,12 +22,24 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Button Text="{Binding}" 
-                            FontSize="20"
-                            TextColor="White"
-                            BackgroundColor="RoyalBlue"
-                            Padding="10"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateCommand}"
-                            CommandParameter="{Binding}" />
+                    FontSize="20"
+                    TextColor="White"
+                    BackgroundColor="RoyalBlue"
+                    Padding="10"
+                    CornerRadius="20"
+                            
+                          
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateCommand}"
+                    CommandParameter="{Binding}" >
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="RoyalBlue" Offset="0.0" />
+                                <GradientStop Color="SkyBlue" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
@@ -35,6 +47,6 @@
     </StackLayout>
 
 
-
-
 </ContentPage>
+
+

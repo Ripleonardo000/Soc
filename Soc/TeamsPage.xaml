@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.TeamsPage"
+             Title="{Binding League}">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+            <Label Text="{Binding League}" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" />
+
+            <!-- Lista de botones para equipos -->
+            <CollectionView ItemsSource="{Binding Teams}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding .}" 
+                                BackgroundColor="LightGray" 
+                                TextColor="Black" 
+                                CornerRadius="10" 
+                                Margin="0,5"
+                                Clicked="OnTeamClicked" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+

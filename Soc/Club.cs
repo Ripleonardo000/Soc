@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace soc
 {
-    internal class Club
+    public class Club
     {
+        public int ClubId { get; set; }  // ID único del club
+        public string Nombre { get; set; }  // Nombre del club
+        public string Ciudad { get; set; }  // Ciudad a la que pertenece el club
     }
 }
