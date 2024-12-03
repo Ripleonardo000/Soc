@@ -1,6 +1,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:soc"
              x:Class="soc.ProximosPartidosPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:FechaHoraConverter x:Key="FechaHoraConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <StackLayout>
         <ListView x:Name="PartidosListView">
             <ListView.ItemTemplate>
@@ -14,7 +21,7 @@
                             <!-- Logo del equipo visitante -->
                             <Image Source="{Binding AwayTeam.CrestUrl}" HeightRequest="50" WidthRequest="50" />
                             <!-- Fecha y hora del partido -->
-                            <Label Text="{Binding UtcDate}" VerticalOptions="Center" HorizontalOptions="EndAndExpand" />
+                            <Label Text="{Binding UtcDate, Converter={StaticResource FechaHoraConverter}}" VerticalOptions="Center" HorizontalOptions="EndAndExpand" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
