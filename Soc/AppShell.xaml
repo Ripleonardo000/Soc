@@ -8,33 +8,27 @@
     <TabBar>
         <!-- Primera pestaña: Inicio -->
         <ShellContent Title="Inicio"
-                      
                       ContentTemplate="{DataTemplate local:Inicio}" />
 
-        <!-- Segunda pestaña: Ejemplo -->
+        <!-- Segunda pestaña: Clubes -->
         <ShellContent Title="Clubes"
-                      
                       ContentTemplate="{DataTemplate local:ClubesPage}" />
 
         <!-- Tercera pestaña: Jugadores -->
         <ShellContent Title="Jugadores"
-                      
                       ContentTemplate="{DataTemplate local:JugadoresPage}" />
 
-
+        <!-- Cuarta pestaña: Ligas -->
         <ShellContent Title="Ligas"
-                  
-                  ContentTemplate="{DataTemplate local:LigasPage}" />
+                      ContentTemplate="{DataTemplate local:LigasPage}" />
 
-        <ShellContent Title="Proximos Partidos"
-          
-          ContentTemplate="{DataTemplate local:ProximosPartidos}" />
-
-
+        <!-- Quinta pestaña: LigasP -->
         <ShellContent Title="LigasP"
-           
-           ContentTemplate="{DataTemplate local:ClubesFutPage}" />
+                      ContentTemplate="{DataTemplate local:ClubesFutPage}" />
 
+        <!-- Nueva pestaña: ApiFutbol -->
+        <ShellContent Title="Fútbol"
+                      ContentTemplate="{DataTemplate local:ApiFutbol}" />
     </TabBar>
 
 </Shell>

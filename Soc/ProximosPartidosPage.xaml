@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.ProximosPartidosPage">
+    <StackLayout>
+        <ListView x:Name="PartidosListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <!-- Logo del equipo local -->
+                            <Image Source="{Binding HomeTeam.CrestUrl}" HeightRequest="50" WidthRequest="50" />
+                            <!-- "VS" en el medio -->
+                            <Label Text="VS" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <!-- Logo del equipo visitante -->
+                            <Image Source="{Binding AwayTeam.CrestUrl}" HeightRequest="50" WidthRequest="50" />
+                            <!-- Fecha y hora del partido -->
+                            <Label Text="{Binding UtcDate}" VerticalOptions="Center" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
