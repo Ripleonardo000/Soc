@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -16,22 +16,34 @@ namespace soc.Services
             _httpClient.DefaultRequestHeaders.Add("X-Auth-Token", "0b1a20c3291c4d42a69e1fd30175adca");
         }
 
-        // Método para obtener competiciones (ligas) permitidas en el acceso gratuito
         public async Task<List<LigaDto>> ObtenerLigasAsync()
         {
-            var url = "https://api.football-data.org/v4/competitions";  // Endpoint de competiciones
+            var url = "https://api.football-data.org/v4/competitions";
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<LigasResponse>(response);
             return data.Competitions;
         }
 
-        // Método para obtener los próximos partidos de una liga específica
         public async Task<List<Partido>> ObtenerProximosPartidosAsync(string idLiga)
         {
-            var url = $"https://api.football-data.org/v4/competitions/{idLiga}/matches";  // Endpoint de partidos
+            var url = $"https://api.football-data.org/v4/competitions/{idLiga}/matches";
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<PartidosResponse>(response);
-            return data.Matches;
+
+            // Filtrar solo los partidos futuros
+            var partidosFuturos = new List<Partido>();
+            foreach (var partido in data.Matches)
+            {
+                if (DateTime.TryParse(partido.UtcDate, out DateTime fechaPartido))
+                {
+                    if (fechaPartido > DateTime.UtcNow)
+                    {
+                        partidosFuturos.Add(partido);
+                    }
+                }
+            }
+
+            return partidosFuturos;
         }
     }
 
@@ -74,6 +86,6 @@ namespace soc.Services
         public string Name { get; set; }
 
         [JsonProperty("crest")]
-        public string CrestUrl { get; set; } // Logo del equipo
+        public string CrestUrl { get; set; }
     }
 }
