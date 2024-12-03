@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace soc
 {
-    internal class Jugador
+    public class Jugador
     {
+        public string Nombre { get; set; }
+        public string Posicion { get; set; }
+        public string Equipo { get; set; }
+        public string Liga { get; set; }
     }
 }
