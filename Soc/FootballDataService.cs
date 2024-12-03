@@ -18,9 +18,22 @@ namespace soc.Services
 
         public async Task<List<LigaDto>> ObtenerLigasAsync()
         {
-            var url = "https://api.football-data.org/v4/competitions";
+            var url = "https://api.football-data.org/v4/competitions";  
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<LigasResponse>(response);
+
+            foreach (var liga in data.Competitions)
+            {
+                switch (liga.Id)
+                {
+                    case "2014": 
+                        liga.Name = "Liga Española";
+                        break;
+                    default:
+                        break;
+                }
+            }
+
             return data.Competitions;
         }
 
