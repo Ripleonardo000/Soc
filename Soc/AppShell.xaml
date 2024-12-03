@@ -27,7 +27,7 @@
                       ContentTemplate="{DataTemplate local:ClubesFutPage}" />
 
         <!-- Nueva pestaña: ApiFutbol -->
-        <ShellContent Title="Fútbol"
+        <ShellContent Title="Proximos Partidos"
                       ContentTemplate="{DataTemplate local:ApiFutbol}" />
     </TabBar>
 
