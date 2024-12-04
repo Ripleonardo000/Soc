@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="soc.TablaPosiciones">
-
+    <ContentPage.BackgroundImageSource>
+        <UriImageSource Uri="https://cdn.gamma.app/zl95qjt7s41rfeo/generated-images/MLjMJOLBz4Wt14i3hB-KF.jpg"/>
+    </ContentPage.BackgroundImageSource>
+    <Grid>
+    <BoxView Color="Black" Opacity="0.8" />
     <StackLayout Padding="10">
 
         <Label Text="Ligas de Fútbol" FontSize="24" HorizontalOptions="Center" Padding="10" />
@@ -22,4 +26,5 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+    </Grid>
 </ContentPage>

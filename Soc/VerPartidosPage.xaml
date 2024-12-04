@@ -3,41 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="soc.VerPartidosPage">
 
-    <ScrollView Padding="10">
-        <StackLayout>
+    <ContentPage.BackgroundImageSource>
+        <UriImageSource Uri="https://cdn.gamma.app/zl95qjt7s41rfeo/generated-images/MLjMJOLBz4Wt14i3hB-KF.jpg"/>
+    </ContentPage.BackgroundImageSource>
 
-            <!-- Futbol Libre OPC1 -->
-            <Label Text="Futbol Libre OPC1" FontSize="20" HorizontalOptions="Center" />
-            <ImageButton Source="https://play-lh.googleusercontent.com/zRe9-Loct_wdUL8uuWMFqElFPhlsLDWYNemkyYNLWdQZhIWQPoWSQ_6o7wzBWB2Y6A=w600-h300-pc0xffffff-pd"
-                         WidthRequest="250"
-                         HeightRequest="150"
-                         HorizontalOptions="Center"
-                         Clicked="OnFutbolLibreOPC1Clicked" />
+    <Grid>
+        <BoxView Color="Black" Opacity="0.8" />
 
-            <!-- Futbol Libre OPC2 -->
-            <Label Text="Futbol Libre OPC2" FontSize="20" HorizontalOptions="Center" />
-            <ImageButton Source="https://evelinacabrera.com.ar/wp-content/uploads/2023/12/Logo.png"
-                         WidthRequest="250"
-                         HeightRequest="150"
-                         HorizontalOptions="Center"
-                         Clicked="OnFutbolLibreOPC2Clicked" />
+        <ScrollView Padding="20">
+            <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
 
-            <!-- Roja Directa -->
-            <Label Text="Roja Directa" FontSize="20" HorizontalOptions="Center" />
-            <ImageButton Source="https://cdn-icons-png.flaticon.com/512/2817/2817780.png"
-                         WidthRequest="250"
-                         HeightRequest="150"
-                         HorizontalOptions="Center"
-                         Clicked="OnRojaDirectaClicked" />
+                <Label Text="Ver Partidos en vivo gratis!"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start" />
 
-            <!-- Roja Directa OPC2 -->
-            <Label Text="Roja Directa OPC2" FontSize="20" HorizontalOptions="Center" />
-            <ImageButton Source="https://i.pinimg.com/236x/a5/06/44/a506448f69ca1f1f6454d4bf50f4238d.jpg"
-                         WidthRequest="250"
-                         HeightRequest="150"
-                         HorizontalOptions="Center"
-                         Clicked="OnRojaDirectaOPC2Clicked" />
+                <!-- Futbol Libre OPC1 -->
+                <Label Text="Futbol Libre OPC1"
+                       FontSize="25"
+                       TextColor="#C237DB"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <ImageButton Source="https://play-lh.googleusercontent.com/zRe9-Loct_wdUL8uuWMFqElFPhlsLDWYNemkyYNLWdQZhIWQPoWSQ_6o7wzBWB2Y6A=w600-h300-pc0xffffff-pd"
+                             WidthRequest="250"
+                             HeightRequest="150"
+                             HorizontalOptions="Center"
+                             BorderColor="#C237DB"
+                             BorderWidth="2"
+                             Clicked="OnFutbolLibreOPC1Clicked" />
 
-        </StackLayout>
-    </ScrollView>
+                <!-- Futbol Libre OPC2 -->
+                <Label Text="Futbol Libre OPC2"
+                       FontSize="25"
+                       TextColor="#C237DB"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <ImageButton Source="https://evelinacabrera.com.ar/wp-content/uploads/2023/12/Logo.png"
+                             WidthRequest="250"
+                             HeightRequest="150"
+                             HorizontalOptions="Center"
+                             BorderColor="#C237DB"
+                             BorderWidth="2"
+                             Clicked="OnFutbolLibreOPC2Clicked" />
+
+                <!-- Roja Directa -->
+                <Label Text="Roja Directa"
+                       FontSize="25"
+                       TextColor="#C237DB"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/2817/2817780.png"
+                             WidthRequest="250"
+                             HeightRequest="150"
+                             HorizontalOptions="Center"
+                             BorderColor="#C237DB"
+                             BorderWidth="2"
+                             Clicked="OnRojaDirectaClicked" />
+
+                <!-- Roja Directa OPC2 -->
+                <Label Text="Roja Directa OPC2"
+                       FontSize="25"
+                       TextColor="#C237DB"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center" />
+                <ImageButton Source="https://i.pinimg.com/236x/a5/06/44/a506448f69ca1f1f6454d4bf50f4238d.jpg"
+                             WidthRequest="250"
+                             HeightRequest="150"
+                             HorizontalOptions="Center"
+                             BorderColor="#C237DB"
+                             BorderWidth="2"
+                             Clicked="OnRojaDirectaOPC2Clicked" />
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

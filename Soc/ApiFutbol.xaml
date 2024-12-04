@@ -1,7 +1,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="soc.ApiFutbol">
-    <StackLayout>
+
+    <ContentPage.BackgroundImageSource>
+        <UriImageSource Uri="https://cdn.gamma.app/zl95qjt7s41rfeo/generated-images/QTUOIFtufcFe-JP2Dqjfo.jpg"/>
+    </ContentPage.BackgroundImageSource>
+
+    <Grid>
+        <BoxView Color="Black" Opacity="0.8" />
+        <StackLayout>
         <ListView x:Name="LigasListView" ItemSelected="OnLigaSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -10,4 +17,5 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+    </Grid>
 </ContentPage>
