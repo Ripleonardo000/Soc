@@ -4,41 +4,49 @@
        xmlns:local="clr-namespace:soc"
        x:Class="soc.AppShell">
 
-    <!-- Configuración de pestañas -->
-    <TabBar>
-        <!-- Primera pestaña: Inicio -->
-        <ShellContent Title="Inicio"
-                      ContentTemplate="{DataTemplate local:Inicio}" />
+    <FlyoutItem Title="Inicio"
+                FlyoutIcon="https://images.vexels.com/content/135264/preview/website-home-shadow-icon-36de94.png">
+        <ShellContent ContentTemplate="{DataTemplate local:Inicio}" />
+    </FlyoutItem>
 
-        <!-- Segunda pestaña: Clubes -->
-        <ShellContent Title="Clubes"
-                      ContentTemplate="{DataTemplate local:ClubesPage}" />
+    <FlyoutItem Title="Clubes"
+                FlyoutIcon="https://cdn-icons-png.flaticon.com/512/8928/8928965.png">
+        <ShellContent ContentTemplate="{DataTemplate local:ClubesPage}" />
+    </FlyoutItem>
 
-        <!-- Tercera pestaña: Jugadores -->
-        <ShellContent Title="Jugadores"
-                      ContentTemplate="{DataTemplate local:JugadoresPage}" />
+    <FlyoutItem Title="Jugadores"
+                FlyoutIcon="https://static.vecteezy.com/system/resources/previews/022/725/570/non_2x/icon-of-soccer-player-kicking-a-ball-png.png">
+        <ShellContent ContentTemplate="{DataTemplate local:JugadoresPage}" />
+    </FlyoutItem>
 
-        <!-- Cuarta pestaña: Ligas -->
-        <ShellContent Title="Ligas"
-                      ContentTemplate="{DataTemplate local:LigasPage}" />
+    <FlyoutItem Title="Ligas"
+                FlyoutIcon="https://cdn-icons-png.freepik.com/512/17771/17771553.png">
+        <ShellContent ContentTemplate="{DataTemplate local:LigasPage}" />
+    </FlyoutItem>
 
-        <!-- Quinta pestaña: LigasP -->
-        <ShellContent Title="LigasP"
-                      ContentTemplate="{DataTemplate local:ClubesFutPage}" />
+    <FlyoutItem Title="LigasP"
+                FlyoutIcon="https://cdn-icons-png.freepik.com/512/17771/17771553.png">
+        <ShellContent ContentTemplate="{DataTemplate local:ClubesFutPage}" />
+    </FlyoutItem>
 
-        <!-- Nueva pestaña: ApiFutbol -->
-        <ShellContent Title="Proximos Partidos"
-                      ContentTemplate="{DataTemplate local:ApiFutbol}" />
+    <FlyoutItem Title="Próximos Partidos"
+                FlyoutIcon="https://cdn-icons-png.freepik.com/512/2471/2471524.png">
+        <ShellContent ContentTemplate="{DataTemplate local:ApiFutbol}" />
+    </FlyoutItem>
 
-        <ShellContent Title="Tabla de Posiciones"
-              ContentTemplate="{DataTemplate local:TablaPosiciones}" />
+    <FlyoutItem Title="Tabla de Posiciones"
+                FlyoutIcon="https://cdn-icons-png.flaticon.com/512/6693/6693854.png">
+        <ShellContent ContentTemplate="{DataTemplate local:TablaPosiciones}" />
+    </FlyoutItem>
 
-        <ShellContent Title="Goleadores"
-              ContentTemplate="{DataTemplate local:GoleadoresPage}" />
-        <ShellContent Title="Ver Partidos"
-      ContentTemplate="{DataTemplate local:VerPartidosPage}" />
+    <FlyoutItem Title="Goleadores"
+                FlyoutIcon="https://kopa.website/assets/kopa/tablagoleadores.png">
+        <ShellContent ContentTemplate="{DataTemplate local:GoleadoresPage}" />
+    </FlyoutItem>
 
-
-    </TabBar>
+    <FlyoutItem Title="Ver Partidos"
+                FlyoutIcon="https://cdn-icons-png.flaticon.com/512/6452/6452101.png">
+        <ShellContent ContentTemplate="{DataTemplate local:VerPartidosPage}" />
+    </FlyoutItem>
 
 </Shell>
