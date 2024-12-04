@@ -2,15 +2,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="soc.PosicionesPage">
     <StackLayout>
+       
+        <StackLayout Orientation="Horizontal" Padding="5" BackgroundColor="red">
+            <Label Text="Pos" WidthRequest="40" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="Team" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <Label Text="Matches" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="Points" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="+/-" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="Goals" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
+        </StackLayout>
+
         <ListView x:Name="PosicionesListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <Label Text="{Binding Position}" WidthRequest="30"/>
-                            <Image Source="{Binding Team.CrestUrl}" WidthRequest="30" HeightRequest="30"/>
-                            <Label Text="{Binding Team.Name}" />
-                            <Label Text="{Binding Points}" HorizontalOptions="EndAndExpand" />
+                        <StackLayout Orientation="Horizontal" Padding="5">
+ 
+                            <Label Text="{Binding Position}" WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Image Source="{Binding Team.CrestUrl}" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                            <Label Text="{Binding Team.Name}" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+
+                            <Label Text="{Binding PlayedGames}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Label Text="{Binding Points}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Label Text="{Binding GoalDifference}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Label Text="{Binding GoalsFor}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

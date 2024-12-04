@@ -43,7 +43,6 @@ namespace soc.Services
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<PartidosResponse>(response);
 
-            // Filtrar solo los partidos futuros
             var partidosFuturos = new List<Partido>();
             foreach (var partido in data.Matches)
             {
@@ -64,7 +63,7 @@ namespace soc.Services
             var url = $"https://api.football-data.org/v4/competitions/{idLiga}/standings";
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<PosicionesResponse>(response);
-            return data.Standings[0].Table;  // Asumiendo que hay una sola tabla por liga
+            return data.Standings[0].Table;  
         }
     }
 
@@ -132,5 +131,15 @@ namespace soc.Services
 
         [JsonProperty("points")]
         public int Points { get; set; }
+
+        [JsonProperty("playedGames")]
+        public int PlayedGames { get; set; }
+
+        [JsonProperty("goalDifference")]
+        public int GoalDifference { get; set; }
+
+        [JsonProperty("goalsFor")]
+        public int GoalsFor { get; set; }
     }
+
 }
