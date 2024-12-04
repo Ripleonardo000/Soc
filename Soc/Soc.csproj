@@ -69,6 +69,9 @@
 	  <Compile Update="TablaPosiciones..xaml.cs">
 	    <DependentUpon>TablaPosiciones..xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="VerPartidosPage.xaml.cs">
+	    <DependentUpon>VerPartidosPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -112,6 +115,9 @@
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="TeamsPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="VerPartidosPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>	</ItemGroup>
 

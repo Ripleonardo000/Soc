@@ -13,7 +13,7 @@
 
         <StackLayout Orientation="Horizontal" Padding="5" BackgroundColor="Red">
             <Label Text="Pos" WidthRequest="40" HorizontalOptions="Center" FontAttributes="Bold"/>
-       
+            
             <Label Text="Jugador" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
             <Label Text="Goles" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
         </StackLayout>

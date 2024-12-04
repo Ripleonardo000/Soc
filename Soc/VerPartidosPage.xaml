@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.VerPartidosPage">
+
+    <ScrollView Padding="10">
+        <StackLayout>
+
+            <!-- Futbol Libre OPC1 -->
+            <Label Text="Futbol Libre OPC1" FontSize="20" HorizontalOptions="Center" />
+            <ImageButton Source="https://play-lh.googleusercontent.com/zRe9-Loct_wdUL8uuWMFqElFPhlsLDWYNemkyYNLWdQZhIWQPoWSQ_6o7wzBWB2Y6A=w600-h300-pc0xffffff-pd"
+                         WidthRequest="250"
+                         HeightRequest="150"
+                         HorizontalOptions="Center"
+                         Clicked="OnFutbolLibreOPC1Clicked" />
+
+            <!-- Futbol Libre OPC2 -->
+            <Label Text="Futbol Libre OPC2" FontSize="20" HorizontalOptions="Center" />
+            <ImageButton Source="https://evelinacabrera.com.ar/wp-content/uploads/2023/12/Logo.png"
+                         WidthRequest="250"
+                         HeightRequest="150"
+                         HorizontalOptions="Center"
+                         Clicked="OnFutbolLibreOPC2Clicked" />
+
+            <!-- Roja Directa -->
+            <Label Text="Roja Directa" FontSize="20" HorizontalOptions="Center" />
+            <ImageButton Source="https://cdn-icons-png.flaticon.com/512/2817/2817780.png"
+                         WidthRequest="250"
+                         HeightRequest="150"
+                         HorizontalOptions="Center"
+                         Clicked="OnRojaDirectaClicked" />
+
+            <!-- Roja Directa OPC2 -->
+            <Label Text="Roja Directa OPC2" FontSize="20" HorizontalOptions="Center" />
+            <ImageButton Source="https://i.pinimg.com/236x/a5/06/44/a506448f69ca1f1f6454d4bf50f4238d.jpg"
+                         WidthRequest="250"
+                         HeightRequest="150"
+                         HorizontalOptions="Center"
+                         Clicked="OnRojaDirectaOPC2Clicked" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
