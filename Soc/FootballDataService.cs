@@ -18,7 +18,7 @@ namespace soc.Services
 
         public async Task<List<LigaDto>> ObtenerLigasAsync()
         {
-            var url = "https://api.football-data.org/v4/competitions";  
+            var url = "https://api.football-data.org/v4/competitions";
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<LigasResponse>(response);
 
@@ -26,7 +26,7 @@ namespace soc.Services
             {
                 switch (liga.Id)
                 {
-                    case "2014": 
+                    case "2014":
                         liga.Name = "Liga Española";
                         break;
                     default:
@@ -57,6 +57,14 @@ namespace soc.Services
             }
 
             return partidosFuturos;
+        }
+
+        public async Task<List<Posicion>> ObtenerTablaPosicionesAsync(string idLiga)
+        {
+            var url = $"https://api.football-data.org/v4/competitions/{idLiga}/standings";
+            var response = await _httpClient.GetStringAsync(url);
+            var data = JsonConvert.DeserializeObject<PosicionesResponse>(response);
+            return data.Standings[0].Table;  // Asumiendo que hay una sola tabla por liga
         }
     }
 
@@ -100,5 +108,29 @@ namespace soc.Services
 
         [JsonProperty("crest")]
         public string CrestUrl { get; set; }
+    }
+
+    public class PosicionesResponse
+    {
+        [JsonProperty("standings")]
+        public List<Standing> Standings { get; set; }
+    }
+
+    public class Standing
+    {
+        [JsonProperty("table")]
+        public List<Posicion> Table { get; set; }
+    }
+
+    public class Posicion
+    {
+        [JsonProperty("position")]
+        public int Position { get; set; }
+
+        [JsonProperty("team")]
+        public Team Team { get; set; }
+
+        [JsonProperty("points")]
+        public int Points { get; set; }
     }
 }

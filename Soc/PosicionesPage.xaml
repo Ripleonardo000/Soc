@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.PosicionesPage">
+    <StackLayout>
+        <ListView x:Name="PosicionesListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Label Text="{Binding Position}" WidthRequest="30"/>
+                            <Image Source="{Binding Team.CrestUrl}" WidthRequest="30" HeightRequest="30"/>
+                            <Label Text="{Binding Team.Name}" />
+                            <Label Text="{Binding Points}" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

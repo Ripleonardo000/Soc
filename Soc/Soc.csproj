@@ -64,6 +64,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="TablaPosiciones..xaml.cs">
+	    <DependentUpon>TablaPosiciones..xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 		<MauiXaml Update="ApiFutbol.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
@@ -89,6 +95,12 @@
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="LigasViewModel.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="PosicionesPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="TablaPosiciones..xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="ProximosPartidosPage.xaml">

@@ -29,6 +29,10 @@
         <!-- Nueva pestaña: ApiFutbol -->
         <ShellContent Title="Proximos Partidos"
                       ContentTemplate="{DataTemplate local:ApiFutbol}" />
+
+        <ShellContent Title="Tabla de Posiciones"
+              ContentTemplate="{DataTemplate local:TablaPosiciones}" />
+
     </TabBar>
 
 </Shell>
