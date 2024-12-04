@@ -19,7 +19,8 @@
                             
                             <Image Source="{Binding LogoUrl}" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" />
 
-                            <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" Padding="10" />
+                                <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" Padding="10" TextColor="#C237DB"
+FontAttributes="Bold"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

@@ -12,7 +12,7 @@
         <ListView x:Name="LigasListView" ItemSelected="OnLigaSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Name}" />
+                        <TextCell Text="{Binding Name}" TextColor="#C237DB" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

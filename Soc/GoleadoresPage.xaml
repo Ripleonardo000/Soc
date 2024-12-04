@@ -28,15 +28,18 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="5">
-                            
-                      
-                            <Label Text="{Binding Position}" WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-                            
 
-                            <Label Text="{Binding Player.Name}" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                                <Label Text="{Binding Position}" WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#C237DB"
+FontAttributes="Bold"/>
 
-                            <Label Text="{Binding Goals}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+                                <Label Text="{Binding Player.Name}" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="#C237DB"
+FontAttributes="Bold"/>
+
+                                <Label Text="{Binding Goals}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#C237DB"
+FontAttributes="Bold"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

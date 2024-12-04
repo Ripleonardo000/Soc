@@ -17,7 +17,8 @@
                             <!-- Logo del equipo local -->
                             <Image Source="{Binding HomeTeam.CrestUrl}" HeightRequest="50" WidthRequest="50" />
                             <!-- "VS" en el medio -->
-                            <Label Text="VS" VerticalOptions="Center" HorizontalOptions="Center" />
+                            <Label Text="VS" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#C237DB"
+FontAttributes="Bold"/>
                             <!-- Logo del equipo visitante -->
                             <Image Source="{Binding AwayTeam.CrestUrl}" HeightRequest="50" WidthRequest="50" />
                             <!-- Fecha y hora del partido -->
