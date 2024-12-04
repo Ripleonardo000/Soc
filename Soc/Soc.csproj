@@ -61,6 +61,8 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		
+
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,6 +80,9 @@
 		</MauiXaml>
 		<MauiXaml Update="ClubesPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="GoleadoresPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="Inicio.xaml">
 			<Generator>MSBuild:Compile</Generator>
@@ -109,5 +114,14 @@
 		<MauiXaml Update="TeamsPage.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="GoleadoresPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="PosicionesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	</ItemGroup>
 
 </Project>

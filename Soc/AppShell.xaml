@@ -33,6 +33,9 @@
         <ShellContent Title="Tabla de Posiciones"
               ContentTemplate="{DataTemplate local:TablaPosiciones}" />
 
+        <ShellContent Title="Goleadores"
+              ContentTemplate="{DataTemplate local:GoleadoresPage}" />
+
     </TabBar>
 
 </Shell>

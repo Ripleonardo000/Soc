@@ -1,0 +1,42 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.GoleadoresPage">
+
+    <StackLayout Padding="10">
+       
+        <Label Text="Selecciona una liga" FontSize="20" HorizontalOptions="Center" Padding="10"/>
+        <Picker x:Name="LigasPicker" SelectedIndexChanged="OnLigaSelected">
+            <Picker.ItemDisplayBinding>
+                <Binding Path="Name" />
+            </Picker.ItemDisplayBinding>
+        </Picker>
+
+        <StackLayout Orientation="Horizontal" Padding="5" BackgroundColor="Red">
+            <Label Text="Pos" WidthRequest="40" HorizontalOptions="Center" FontAttributes="Bold"/>
+       
+            <Label Text="Jugador" HorizontalOptions="StartAndExpand" FontAttributes="Bold"/>
+            <Label Text="Goles" WidthRequest="60" HorizontalOptions="Center" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <ListView x:Name="GoleadoresListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            
+                      
+                            <Label Text="{Binding Position}" WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            
+
+                            <Label Text="{Binding Player.Name}" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+
+                            <Label Text="{Binding Goals}" WidthRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>
