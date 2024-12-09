@@ -44,7 +44,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:GoleadoresPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Ver Partidos"
+    <FlyoutItem Title="Ver Partidos Gratis"
                 FlyoutIcon="https://cdn-icons-png.flaticon.com/512/6452/6452101.png">
         <ShellContent ContentTemplate="{DataTemplate local:VerPartidosPage}" />
     </FlyoutItem>

@@ -9,7 +9,7 @@
     <BoxView Color="Black" Opacity="0.8" />
     <StackLayout Padding="10">
 
-        <Label Text="Ligas de Fútbol" FontSize="24" HorizontalOptions="Center" Padding="10" />
+            <Label Text="Seleccione una liga para conocer su clasificación!" FontSize="24" HorizontalOptions="Center" Padding="10" TextColor="White" FontFamily="Lucida Handwriting"/>
 
         <ListView x:Name="LigasListView" ItemSelected="OnLigaSelected">
             <ListView.ItemTemplate>
