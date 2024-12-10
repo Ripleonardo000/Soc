@@ -9,30 +9,629 @@
                        FontSize="24"
                        HorizontalOptions="Center" />
 
-                <!-- Botones para cada liga -->
-                <Button Text="Premier League" 
-                        BackgroundColor="DodgerBlue" 
-                        TextColor="White" 
-                        CornerRadius="10"
-                        Clicked="OnLeagueClicked" />
+            <!-- Europa -->
+            <Button Text="Premier League" 
+        BackgroundColor="DodgerBlue" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Serie A" 
+        BackgroundColor="MediumSeaGreen" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Bundesliga" 
+        BackgroundColor="Crimson" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Ligue 1" 
+        BackgroundColor="DarkOrchid" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="LaLiga" 
+        BackgroundColor="Goldenrod" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Eredivisie" 
+        BackgroundColor="Orange" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Primeira Liga" 
+        BackgroundColor="LightSeaGreen" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Russian Premier League" 
+        BackgroundColor="Tomato" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
 
-                <Button Text="Serie A" 
-                        BackgroundColor="MediumSeaGreen" 
-                        TextColor="White" 
-                        CornerRadius="10"
-                        Clicked="OnLeagueClicked" />
 
-                <Button Text="Bundesliga" 
-                        BackgroundColor="Crimson" 
-                        TextColor="White" 
-                        CornerRadius="10"
-                        Clicked="OnLeagueClicked" />
 
-                <Button Text="Ligue 1" 
-                        BackgroundColor="DarkOrchid" 
-                        TextColor="White" 
-                        CornerRadius="10"
-                        Clicked="OnLeagueClicked" />
-            </VerticalStackLayout>
+
+
+
+            <!-- Sudamérica -->
+
+            <!-- Sudamérica -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Argentina -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="LightSkyBlue" Offset="0.0" />
+                        
+                        
+                        <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Argentina Primera División"/>
+                        <On Platform="Android" Value="Argentina Primera División"/>
+                        <On Platform="UWP" Value="Argentina Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="Yellow" 
+        BackgroundColor="Transparent" 
+        BorderColor="Green"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Brasil -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Green" Offset="0.0" />
+                        <GradientStop Color="Yellow" Offset="0.5" />
+                        <GradientStop Color="Blue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Brasil Serie A"/>
+                        <On Platform="Android" Value="Brasil Serie A"/>
+                        <On Platform="UWP" Value="Brasil Serie A"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Red"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Chile -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        <GradientStop Color="Blue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Chile Primera División"/>
+                        <On Platform="Android" Value="Chile Primera División"/>
+                        <On Platform="UWP" Value="Chile Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Yellow"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Colombia -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Colombia Primera A"/>
+                        <On Platform="Android" Value="Colombia Primera A"/>
+                        <On Platform="UWP" Value="Colombia Primera A"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Red"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Perú -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Perú Liga 1"/>
+                        <On Platform="Android" Value="Perú Liga 1"/>
+                        <On Platform="UWP" Value="Perú Liga 1"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Blue"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Uruguay -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="White" Offset="0.0" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="White" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Uruguay Primera División"/>
+                        <On Platform="Android" Value="Uruguay Primera División"/>
+                        <On Platform="UWP" Value="Uruguay Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Red"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Ecuador -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Ecuador Serie A"/>
+                        <On Platform="Android" Value="Ecuador Serie A"/>
+                        <On Platform="UWP" Value="Ecuador Serie A"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Red"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Paraguay -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        
+                        <GradientStop Color="Blue" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Paraguay Primera División"/>
+                        <On Platform="Android" Value="Paraguay Primera División"/>
+                        <On Platform="UWP" Value="Paraguay Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="Green"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <!-- Gradiente de Bolivia -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        <GradientStop Color="Yellow" Offset="0.5" />
+                        <GradientStop Color="Green" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Bolivia Liga Profesional"/>
+                        <On Platform="Android" Value="Bolivia Liga Profesional"/>
+                        <On Platform="UWP" Value="Bolivia Liga Profesional"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+
+
+
+
+
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                
+                
+                
+                
+                
+                <Button.Background>
+                    
+                    
+                    
+                    <!-- Gradiente de Venezuela -->
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Venezuela Primera División"/>
+                        <On Platform="Android" Value="Venezuela Primera División"/>
+                        <On Platform="UWP" Value="Venezuela Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+
+
+
+
+            <!-- Costa Rica Primera División -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                       
+                        
+                        
+                        <GradientStop Color="Blue" Offset="0.66" />
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Costa Rica Primera División"/>
+                        <On Platform="Android" Value="Costa Rica Primera División"/>
+                        <On Platform="UWP" Value="Costa Rica Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- El Salvador Primera División -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Blue" Offset="0.0" />
+                        
+                        
+                        <GradientStop Color="Red" Offset="0.66" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="El Salvador Primera División"/>
+                        <On Platform="Android" Value="El Salvador Primera División"/>
+                        <On Platform="UWP" Value="El Salvador Primera División"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- Guatemala Liga Nacional -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Blue" Offset="0.0" />
+                        
+                        
+                        <GradientStop Color="Red" Offset="0.66" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Guatemala Liga Nacional"/>
+                        <On Platform="Android" Value="Guatemala Liga Nacional"/>
+                        <On Platform="UWP" Value="Guatemala Liga Nacional"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- Honduras Liga Nacional -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        
+                        
+                        <GradientStop Color="Blue" Offset="0.66" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Honduras Liga Nacional"/>
+                        <On Platform="Android" Value="Honduras Liga Nacional"/>
+                        <On Platform="UWP" Value="Honduras Liga Nacional"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- Nicaragua Liga Primera -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        
+                        
+                        <GradientStop Color="Blue" Offset="0.66" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Nicaragua Liga Primera"/>
+                        <On Platform="Android" Value="Nicaragua Liga Primera"/>
+                        <On Platform="UWP" Value="Nicaragua Liga Primera"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- México Liga MX -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Green" Offset="0.0" />
+                        
+                        
+                        
+                        
+                        <GradientStop Color="Red" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="México Liga MX"/>
+                        <On Platform="Android" Value="México Liga MX"/>
+                        <On Platform="UWP" Value="México Liga MX"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- Estados Unidos Major League Soccer -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        
+                        
+                        <GradientStop Color="Blue" Offset="0.66" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Estados Unidos Major League Soccer"/>
+                        <On Platform="Android" Value="Estados Unidos Major League Soccer"/>
+                        <On Platform="UWP" Value="Estados Unidos Major League Soccer"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+            <!-- Canadá Major League Soccer -->
+            <Button FontAttributes="Bold"
+        FontSize="18"
+        TextColor="White" 
+        BackgroundColor="Transparent" 
+        BorderColor="White"
+        BorderWidth="2"
+        CornerRadius="10"
+        Clicked="OnLeagueClicked">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Red" Offset="0.0" />
+                        
+                        
+                        
+                        
+                        <GradientStop Color="Red" Offset="1.0" />
+                        
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Text>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Canadá Major League Soccer"/>
+                        <On Platform="Android" Value="Canadá Major League Soccer"/>
+                        <On Platform="UWP" Value="Canadá Major League Soccer"/>
+                    </OnPlatform>
+                </Button.Text>
+            </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- África -->
+            <Button Text="Sudáfrica Premier Division" 
+        BackgroundColor="DarkSlateBlue" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+            <Button Text="Egipto Premier League" 
+        BackgroundColor="DarkGreen" 
+        TextColor="White" 
+        CornerRadius="10"
+        Clicked="OnLeagueClicked" />
+
+        </VerticalStackLayout>
         </ScrollView>
     </ContentPage>

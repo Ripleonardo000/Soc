@@ -24,7 +24,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:LigasPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="LigasP"
+    <FlyoutItem Title="Clubes World"
                 FlyoutIcon="https://cdn-icons-png.freepik.com/512/17771/17771553.png">
         <ShellContent ContentTemplate="{DataTemplate local:ClubesFutPage}" />
     </FlyoutItem>
