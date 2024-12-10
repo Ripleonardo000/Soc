@@ -4,47 +4,49 @@
              x:Class="soc.JugadoresPage"
              Title="Jugadores">
 
-    <StackLayout Padding="20" Spacing="15">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
 
-        <!-- Picker para seleccionar la liga -->
-        <Picker x:Name="LigaPicker" 
-                Title="Selecciona una liga" 
-                SelectedIndexChanged="OnLigaSelectedIndexChanged">
-            <Picker.Items>
-                <x:String>Premier League</x:String>
-                <x:String>Serie A</x:String>
-                <x:String>Bundesliga</x:String>
-                <x:String>Ligue 1</x:String>
-                <x:String>La Liga</x:String>
-                <!-- Nueva liga agregada -->
-                <x:String>MLS</x:String>
-                <!-- Nueva liga agregada -->
-                <x:String>Eredivisie</x:String>
-                <!-- Nueva liga agregada -->
-                <x:String>Primeira Liga</x:String>
-                <!-- Nueva liga agregada -->
-            </Picker.Items>
-        </Picker>
+            <!-- Picker para seleccionar la liga -->
+            <Picker x:Name="LigaPicker" 
+                    Title="Selecciona una liga" 
+                    SelectedIndexChanged="OnLigaSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Premier League</x:String>
+                    <x:String>Serie A</x:String>
+                    <x:String>Bundesliga</x:String>
+                    <x:String>Ligue 1</x:String>
+                    <x:String>La Liga</x:String>
+                    <!-- Nueva liga agregada -->
+                    <x:String>MLS</x:String>
+                    <!-- Nueva liga agregada -->
+                    <x:String>Eredivisie</x:String>
+                    <!-- Nueva liga agregada -->
+                    <x:String>Primeira Liga</x:String>
+                    <!-- Nueva liga agregada -->
+                </Picker.Items>
+            </Picker>
 
-        <!-- Picker para seleccionar el equipo -->
-        <Picker x:Name="EquipoPicker" 
-                Title="Selecciona un equipo" 
-                SelectedIndexChanged="OnEquipoSelectedIndexChanged">
-            <!-- Los equipos se agregarán dinámicamente -->
-        </Picker>
+            <!-- Picker para seleccionar el equipo -->
+            <Picker x:Name="EquipoPicker" 
+                    Title="Selecciona un equipo" 
+                    SelectedIndexChanged="OnEquipoSelectedIndexChanged">
+                <!-- Los equipos se agregarán dinámicamente -->
+            </Picker>
 
-        <!-- CollectionView para mostrar los jugadores -->
-        <CollectionView x:Name="JugadoresCollectionView" 
-                        ItemsSource="{Binding Jugadores}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="10" Spacing="5">
-                        <Label Text="{Binding Nombre}" FontSize="18" />
-                        <Label Text="{Binding Posicion}" FontSize="14" TextColor="Gray" />
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            <!-- CollectionView para mostrar los jugadores -->
+            <CollectionView x:Name="JugadoresCollectionView" 
+                            ItemsSource="{Binding Jugadores}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" Spacing="5">
+                            <Label Text="{Binding Nombre}" FontSize="18" />
+                            <Label Text="{Binding Posicion}" FontSize="14" TextColor="Gray" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-    </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
