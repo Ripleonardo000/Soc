@@ -260,7 +260,7 @@ namespace soc
 
 
 
-
+    new Jugador {Nombre = "cqgbgbqw", Posicion = "MCD ", Equipo= "Sevilla", Liga = "La Liga"},
 
 
 
