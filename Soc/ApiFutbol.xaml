@@ -8,15 +8,28 @@
 
     <Grid>
         <BoxView Color="Black" Opacity="0.8" />
-        <StackLayout>
-            <Label Text="Conoce las proximas jornadas de tu equipo favorito!" FontSize="24" HorizontalOptions="Center" VerticalOptions="Start" Padding="10" TextColor="White" FontAttributes="Bold" FontFamily="Lucida Handwriting"/>
-        <ListView x:Name="LigasListView" ItemSelected="OnLigaSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                        <TextCell Text="{Binding Name}" TextColor="#C237DB" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Conoce las proximas jornadas de tu equipo favorito!" 
+                       FontSize="24" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Start" 
+                       Padding="10" 
+                       TextColor="White" 
+                       FontAttributes="Bold" 
+                       FontFamily="Lucida Handwriting"/>
+                <ListView x:Name="LigasListView" ItemSelected="OnLigaSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10">
+                                    <Label Text="{Binding Name}" TextColor="#C237DB" FontSize="18"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>
