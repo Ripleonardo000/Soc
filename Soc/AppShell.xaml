@@ -9,11 +9,6 @@
         <ShellContent ContentTemplate="{DataTemplate local:Inicio}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Clubes"
-                FlyoutIcon="https://cdn-icons-png.flaticon.com/512/8928/8928965.png">
-        <ShellContent ContentTemplate="{DataTemplate local:ClubesPage}" />
-    </FlyoutItem>
-
     <FlyoutItem Title="Jugadores"
                 FlyoutIcon="https://static.vecteezy.com/system/resources/previews/022/725/570/non_2x/icon-of-soccer-player-kicking-a-ball-png.png">
         <ShellContent ContentTemplate="{DataTemplate local:JugadoresPage}" />
@@ -24,7 +19,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:LigasPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Clubes World"
+    <FlyoutItem Title="Clubes World "
                 FlyoutIcon="https://cdn-icons-png.freepik.com/512/17771/17771553.png">
         <ShellContent ContentTemplate="{DataTemplate local:ClubesFutPage}" />
     </FlyoutItem>
