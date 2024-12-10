@@ -1,507 +1,364 @@
 <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                 x:Class="soc.ClubesFutPage"
-                 Title="Clubes de Fútbol">
-        <ScrollView>
-            <VerticalStackLayout Padding="10" Spacing="15">
-                <Label Text="Seleccione una liga:" 
-                       FontSize="24"
-                       HorizontalOptions="Center" />
-
-
-
-
-
-            <!-- Premier League (Inglaterra) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#C8102E" Offset="0.0" />
-                        <!-- Red -->
-                        <GradientStop Color="#003478" Offset="1.0" />
-                        <!-- Blue -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Premier League"/>
-                        <On Platform="Android" Value="Premier League"/>
-                        <On Platform="UWP" Value="Premier League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Serie A (Italia) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#009246" Offset="0.0" />
-                        <!-- Green -->
-                        
-                        
-                        
-                        
-                        <!-- White -->
-                        <GradientStop Color="#CE2B37" Offset="1.0" />
-                        <!-- Red -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Serie A"/>
-                        <On Platform="Android" Value="Serie A"/>
-                        <On Platform="UWP" Value="Serie A"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Bundesliga (Alemania) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#000000" Offset="0.0" />
-                        <!-- Black -->
-                        <GradientStop Color="#FFCC00" Offset="1.0" />
-                        <!-- Yellow -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Bundesliga"/>
-                        <On Platform="Android" Value="Bundesliga"/>
-                        <On Platform="UWP" Value="Bundesliga"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Ligue 1 (Francia) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#0055A4" Offset="0.0" />
-                        <!-- Blue -->
-                        <GradientStop Color="#F1C40F" Offset="1.0" />
-                        <!-- Yellow -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Ligue 1"/>
-                        <On Platform="Android" Value="Ligue 1"/>
-                        <On Platform="UWP" Value="Ligue 1"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- LaLiga (España) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#FF0000" Offset="0.0" />
-                        <!-- Red -->
-                        <GradientStop Color="#F1C700" Offset="1.0" />
-                        <!-- Yellow -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="LaLiga"/>
-                        <On Platform="Android" Value="LaLiga"/>
-                        <On Platform="UWP" Value="LaLiga"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Eredivisie (Países Bajos) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#21468B" Offset="0.0" />
-                        <!-- Blue -->
-                        <GradientStop Color="#F8A800" Offset="1.0" />
-                        <!-- Orange -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Eredivisie"/>
-                        <On Platform="Android" Value="Eredivisie"/>
-                        <On Platform="UWP" Value="Eredivisie"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Primeira Liga (Portugal) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#006400" Offset="0.0" />
-                        <!-- Green -->
-                        <GradientStop Color="#FF0000" Offset="1.0" />
-                        <!-- Red -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Primeira Liga"/>
-                        <On Platform="Android" Value="Primeira Liga"/>
-                        <On Platform="UWP" Value="Primeira Liga"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-            <!-- Russian Premier League (Rusia) -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White"
-        BackgroundColor="Transparent"
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#D52B1E" Offset="0.0" />
-                        <!-- Red -->
-                        <GradientStop Color="#000000" Offset="1.0" />
-                        <!-- Black -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Russian Premier League"/>
-                        <On Platform="Android" Value="Russian Premier League"/>
-                        <On Platform="UWP" Value="Russian Premier League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-            <!-- Sudamérica -->
-
-            <!-- Sudamérica -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Argentina -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="LightSkyBlue" Offset="0.0" />
-                        
-                        
-                        <GradientStop Color="LightSkyBlue" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Argentina Primera División"/>
-                        <On Platform="Android" Value="Argentina Primera División"/>
-                        <On Platform="UWP" Value="Argentina Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="Yellow" 
-        BackgroundColor="Transparent" 
-        BorderColor="Green"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Brasil -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Green" Offset="0.0" />
-                        <GradientStop Color="Yellow" Offset="0.5" />
-                        <GradientStop Color="Blue" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Brasil Serie A"/>
-                        <On Platform="Android" Value="Brasil Serie A"/>
-                        <On Platform="UWP" Value="Brasil Serie A"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Red"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Chile -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        <GradientStop Color="Blue" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Chile Primera División"/>
-                        <On Platform="Android" Value="Chile Primera División"/>
-                        <On Platform="UWP" Value="Chile Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Yellow"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Colombia -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Yellow" Offset="0.0" />
-                        <GradientStop Color="Blue" Offset="0.5" />
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Colombia Primera A"/>
-                        <On Platform="Android" Value="Colombia Primera A"/>
-                        <On Platform="UWP" Value="Colombia Primera A"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Red"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Perú -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Perú Liga 1"/>
-                        <On Platform="Android" Value="Perú Liga 1"/>
-                        <On Platform="UWP" Value="Perú Liga 1"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Blue"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Uruguay -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="White" Offset="0.0" />
-                        <GradientStop Color="Blue" Offset="0.5" />
-                        <GradientStop Color="White" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Uruguay Primera División"/>
-                        <On Platform="Android" Value="Uruguay Primera División"/>
-                        <On Platform="UWP" Value="Uruguay Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Red"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Ecuador -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Yellow" Offset="0.0" />
-                        <GradientStop Color="Blue" Offset="0.5" />
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Ecuador Serie A"/>
-                        <On Platform="Android" Value="Ecuador Serie A"/>
-                        <On Platform="UWP" Value="Ecuador Serie A"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Red"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Paraguay -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        
-                        <GradientStop Color="Blue" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Paraguay Primera División"/>
-                        <On Platform="Android" Value="Paraguay Primera División"/>
-                        <On Platform="UWP" Value="Paraguay Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="Green"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <!-- Gradiente de Bolivia -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        <GradientStop Color="Yellow" Offset="0.5" />
-                        <GradientStop Color="Green" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Bolivia Liga Profesional"/>
-                        <On Platform="Android" Value="Bolivia Liga Profesional"/>
-                        <On Platform="UWP" Value="Bolivia Liga Profesional"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="soc.ClubesFutPage"
+             Title="Clubes de Fútbol">
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="15">
+            <Label Text="Seleccione una liga:" 
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <!-- Premier League -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Premier League</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Serie A -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Serie A</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Bundesliga -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Bundesliga</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Ligue 1 -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Ligue 1</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- LaLiga -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>LaLiga</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Eredivisie -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Eredivisie</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Primeira Liga -->
+            <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Primeira Liga</Button.Text>
+                </Button>
+            </Grid>
+            <!-- Russian Premier League -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Russian Premier League</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Argentina Primera División -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Argentina Primera División</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Chile Primera División -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Chile Primera División</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Colombia Primera A -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+ WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Colombia Primera A</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Perú Liga 1 -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+ WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Perú Liga 1</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Uruguay Primera División -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                        HeightRequest="40"
+ WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Uruguay Primera División</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Ecuador Serie A -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                        HeightRequest="40"
+ WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Ecuador Serie A</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Paraguay Primera División -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+ WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Paraguay Primera División</Button.Text>
+                </Button>
+            </Grid>
+
+            <!-- Bolivia Liga Profesional -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Bolivia Liga Profesional</Button.Text>
+                </Button>
+            </Grid>
 
 
 
