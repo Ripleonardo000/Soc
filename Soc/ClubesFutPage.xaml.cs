@@ -1,4 +1,4 @@
-using Microsoft.Maui.Controls;
+Ôªøusing Microsoft.Maui.Controls;
 
 namespace soc
 {
@@ -17,139 +17,233 @@ namespace soc
 
                 List<string> teams = league switch
                 {
+
+
+
+                    // **Europa** - Equipos de las ligas europeas
+
+                    // Premier League
                     "Premier League" => new List<string>
-    {
-        "Arsenal", "Aston Villa", "Bournemouth", "Brentford", "Brighton & Hove Albion",
-        "Burnley", "Chelsea", "Crystal Palace", "Everton", "Fulham",
-        "Liverpool", "Luton Town", "Manchester City", "Manchester United",
-        "Newcastle United", "Nottingham Forest", "Sheffield United",
-        "Tottenham Hotspur", "West Ham United", "Wolverhampton Wanderers"
-    },
+{
+    "Arsenal", "Aston Villa", "Bournemouth", "Brentford", "Brighton & Hove Albion",
+    "Burnley", "Chelsea", "Crystal Palace", "Everton", "Fulham",
+    "Liverpool", "Luton Town", "Manchester City", "Manchester United",
+    "Newcastle United", "Nottingham Forest", "Sheffield United",
+    "Tottenham Hotspur", "West Ham United", "Wolverhampton Wanderers"
+},
+
+                    // Serie A
                     "Serie A" => new List<string>
-    {
-        "Atalanta", "Bologna", "Cagliari", "Empoli", "Fiorentina",
-        "Genoa", "Hellas Verona", "Inter de Mil·n", "Juventus", "Lazio",
-        "Lecce", "AC Milan", "Monza", "Napoli", "Roma",
-        "Salernitana", "Sassuolo", "Torino", "Udinese", "Frosinone"
-    },
+{
+    "Atalanta", "Bologna", "Cagliari", "Empoli", "Fiorentina",
+    "Genoa", "Hellas Verona", "Inter de Mil√°n", "Juventus", "Lazio",
+    "Lecce", "AC Milan", "Monza", "Napoli", "Roma",
+    "Salernitana", "Sassuolo", "Torino", "Udinese", "Frosinone"
+},
+
+                    // Bundesliga
                     "Bundesliga" => new List<string>
-    {
-        "Augsburgo", "Bayer Leverkusen", "Bayern M˙nich", "Bochum", "Borussia Dortmund",
-        "Borussia Mˆnchengladbach", "Darmstadt 98", "Eintracht Frankfurt", "Friburgo",
-        "Heidenheim", "Hoffenheim", "Kˆln", "Mainz 05", "RB Leipzig",
-        "Stuttgart", "Union BerlÌn", "Werder Bremen", "Wolfsburgo"
-    },
+{
+    "Augsburgo", "Bayer Leverkusen", "Bayern M√∫nich", "Bochum", "Borussia Dortmund",
+    "Borussia M√∂nchengladbach", "Darmstadt 98", "Eintracht Frankfurt", "Friburgo",
+    "Heidenheim", "Hoffenheim", "K√∂ln", "Mainz 05", "RB Leipzig",
+    "Stuttgart", "Union Berl√≠n", "Werder Bremen", "Wolfsburgo"
+},
+
+                    // Ligue 1
                     "Ligue 1" => new List<string>
-    {
-        "AS MÛnaco", "Clermont Foot", "Havre AC", "Lens", "Lille",
-        "Lorient", "Lyon", "Marsella", "Metz", "Montpellier",
-        "Nantes", "Nice", "Paris Saint-Germain", "Reims",
-        "Rennes", "Strasbourg", "Toulouse", "Brest"
-    },
+{
+    "AS M√≥naco", "Clermont Foot", "Havre AC", "Lens", "Lille",
+    "Lorient", "Lyon", "Marsella", "Metz", "Montpellier",
+    "Nantes", "Nice", "Paris Saint-Germain", "Reims",
+    "Rennes", "Strasbourg", "Toulouse", "Brest"
+},
+
+                    // LaLiga
                     "LaLiga" => new List<string>
-    {
-        "AlavÈs", "AlmerÌa", "Athletic Club", "AtlÈtico Madrid", "Barcelona",
-        "C·diz", "Celta de Vigo", "Getafe", "Girona", "Granada",
-        "Las Palmas", "Mallorca", "Osasuna", "Rayo Vallecano",
-        "Real Betis", "Real Madrid", "Real Sociedad", "Sevilla",
-        "Valencia", "Villarreal"
-    },
+{
+    "Alav√©s", "Almer√≠a", "Athletic Club", "Atl√©tico Madrid", "Barcelona",
+    "C√°diz", "Celta de Vigo", "Getafe", "Girona", "Granada",
+    "Las Palmas", "Mallorca", "Osasuna", "Rayo Vallecano",
+    "Real Betis", "Real Madrid", "Real Sociedad", "Sevilla",
+    "Valencia", "Villarreal"
+},
+
+                    // Eredivisie
                     "Eredivisie" => new List<string>
-    {
-        "Ajax", "AZ Alkmaar", "Excelsior", "Feyenoord", "Fortuna Sittard",
-        "Go Ahead Eagles", "Heracles Almelo", "NEC Nijmegen", "PSV Eindhoven",
-        "RKC Waalwijk", "SC Cambuur", "Sparta Rotterdam", "Twente",
-        "Utrecht", "Vitesse", "Volendam", "Willem II", "Zwolle"
-    },
+{
+    "Ajax", "AZ Alkmaar", "Excelsior", "Feyenoord", "Fortuna Sittard",
+    "Go Ahead Eagles", "Heracles Almelo", "NEC Nijmegen", "PSV Eindhoven",
+    "RKC Waalwijk", "SC Cambuur", "Sparta Rotterdam", "Twente",
+    "Utrecht", "Vitesse", "Volendam", "Willem II", "Zwolle"
+},
+
+                    // Primeira Liga
                     "Primeira Liga" => new List<string>
-    {
-        "Arouca", "Benfica", "Boavista", "Braga", "Casa Pia",
-        "Chaves", "Estoril", "Famalic„o", "Gil Vicente", "Moreirense",
-        "Portimonense", "Porto", "Rio Ave", "Sporting CP",
-        "Vizela", "VitÛria de Guimar„es"
-    },
+{
+    "Arouca", "Benfica", "Boavista", "Braga", "Casa Pia",
+    "Chaves", "Estoril", "Famalic√£o", "Gil Vicente", "Moreirense",
+    "Portimonense", "Porto", "Rio Ave", "Sporting CP",
+    "Vizela", "Vit√≥ria de Guimar√£es"
+},
+
+                    // Russian Premier League
                     "Russian Premier League" => new List<string>
+{
+    "Akhmat Grozny", "Baltika Kaliningrad", "CSKA Mosc√∫", "Dinamo Mosc√∫",
+    "Fakel Voronezh", "Krylia Sovetov", "Khimki", "Lokomotiv Mosc√∫",
+    "Nizhny Novgorod", "Orenburg", "Rostov", "Rubin Kazan",
+    "Sochi", "Spartak Mosc√∫", "Ural", "Zenit San Petersburgo"
+},
+
+                    // **Otras ligas europeas**
+
+                    "Belgian Pro League" => new List<string>
+{
+    "Anderlecht", "Antwerp", "Club Brugge", "Genk", "Ghent",
+    "Kortrijk", "Mechelen", "Oostende", "Sint-Truiden", "Standard Li√®ge",
+    "Zulte Waregem", "Cercle Brugge"
+},
+
+                    "Swiss Super League" => new List<string>
+{
+    "Basel", "Basilea", "Young Boys", "Zurich", "Servette",
+    "Sion", "St. Gallen", "Lugano", "Luzern", "Thun"
+},
+
+                    "Austrian Bundesliga" => new List<string>
+{
+    "Austria Wien", "Red Bull Salzburg", "Sturm Graz", "LASK", "Rapid Viena",
+    "WAC", "SV Ried", "Austria Klagenfurt", "Altach", "Hartberg"
+},
+
+                    "Turkish S√ºper Lig" => new List<string>
+{
+    "Galatasaray", "Fenerbah√ße", "Be≈üikta≈ü", "Trabzonspor", "Ba≈üak≈üehir",
+    "Sivasspor", "Antalyaspor", "Alanyaspor", "Gaziantep", "Konyaspor",
+    "Adana Demirspor", "Karag√ºmr√ºk", "Kayserispor", "G√∂ztepe"
+},
+
+                    "Greek Super League" => new List<string>
+{
+    "Olympiakos", "PAOK", "AEK Atenas", "Aris", "Atromitos",
+    "Asteras Tripolis", "Lamia", "Volos", "Ionikos", "PAE Veria",
+    "OFI Creta", "Larissa"
+},
+
+                    "Norwegian Eliteserien" => new List<string>
+{
+    "Bod√∏/Glimt", "Molde", "Rosenborg", "Viking", "Sarpsborg 08",
+    "Troms√∏", "Odd", "Kristiansund", "Stab√¶k", "Str√∏msgodset",
+    "V√•lerenga", "Sandefjord"
+},
+
+                    "Denmark Superliga" => new List<string>
+{
+    "Copenhagen", "Midtjylland", "Br√∏ndby", "Aarhus", "Odense",
+    "Randers", "Nordsj√¶lland", "S√∏nderjyskE", "Vejle", "Lyngby"
+},
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    "Argentina Primera Divisi√≥n" => new List<string>
     {
-        "Akhmat Grozny", "Baltika Kaliningrad", "CSKA Mosc˙", "Dinamo Mosc˙",
-        "Fakel Voronezh", "Krylia Sovetov", "Khimki", "Lokomotiv Mosc˙",
-        "Nizhny Novgorod", "Orenburg", "Rostov", "Rubin Kazan",
-        "Sochi", "Spartak Mosc˙", "Ural", "Zenit San Petersburgo"
-    },
-
-
-
-                    "Argentina Primera DivisiÛn" => new List<string>
-    {
-        "Argentinos Juniors", "Arsenal", "AtlÈtico Tucum·n", "Banfield", "Barracas Central",
-        "Belgrano", "Boca Juniors", "Central CÛrdoba", "ColÛn", "Defensa y Justicia",
-        "Estudiantes", "Gimnasia", "Godoy Cruz", "Hurac·n", "Independiente",
-        "Instituto", "Lan˙s", "Newell's Old Boys", "Platense", "Racing Club",
+        "Argentinos Juniors", "Arsenal", "Atl√©tico Tucum√°n", "Banfield", "Barracas Central",
+        "Belgrano", "Boca Juniors", "Central C√≥rdoba", "Col√≥n", "Defensa y Justicia",
+        "Estudiantes", "Gimnasia", "Godoy Cruz", "Hurac√°n", "Independiente",
+        "Instituto", "Lan√∫s", "Newell's Old Boys", "Platense", "Racing Club",
         "River Plate", "Rosario Central", "San Lorenzo", "Sarmiento", "Tigre",
-        "UniÛn", "VÈlez Sarsfield"
+        "Uni√≥n", "V√©lez Sarsfield"
     },
                     "Brasil Serie A" => new List<string>
     {
-        "AmÈrica Mineiro", "AtlÈtico Mineiro", "AtlÈtico Paranaense", "BahÌa", "Botafogo",
-        "Corinthians", "Coritiba", "Cuiab·", "Cruzeiro", "Flamengo",
-        "Fluminense", "Fortaleza", "Goi·s", "GrÍmio", "Internacional",
-        "Palmeiras", "Red Bull Bragantino", "Santos", "S„o Paulo", "Vasco da Gama"
+        "Am√©rica Mineiro", "Atl√©tico Mineiro", "Atl√©tico Paranaense", "Bah√≠a", "Botafogo",
+        "Corinthians", "Coritiba", "Cuiab√°", "Cruzeiro", "Flamengo",
+        "Fluminense", "Fortaleza", "Goi√°s", "Gr√™mio", "Internacional",
+        "Palmeiras", "Red Bull Bragantino", "Santos", "S√£o Paulo", "Vasco da Gama"
     },
-                    "Chile Primera DivisiÛn" => new List<string>
+                    "Chile Primera Divisi√≥n" => new List<string>
     {
-        "Audax Italiano", "Coquimbo Unido", "Colo Colo", "CuricÛ Unido", "Everton",
-        "Huachipato", "Magallanes", "—ublense", "O'Higgins", "Palestino",
-        "Cobresal", "Santiago Wanderers", "UniÛn EspaÒola", "UniÛn La Calera",
-        "Universidad CatÛlica", "Universidad de Chile"
+        "Audax Italiano", "Coquimbo Unido", "Colo Colo", "Curic√≥ Unido", "Everton",
+        "Huachipato", "Magallanes", "√ëublense", "O'Higgins", "Palestino",
+        "Cobresal", "Santiago Wanderers", "Uni√≥n Espa√±ola", "Uni√≥n La Calera",
+        "Universidad Cat√≥lica", "Universidad de Chile"
     },
 
 
                     "Colombia Liga BetPlay" => new List<string>
     {
-        "¡guilas Doradas", "AmÈrica de Cali", "AtlÈtico Bucaramanga", "AtlÈtico Huila",
-        "AtlÈtico Nacional", "Boyac· ChicÛ", "Deportivo Cali", "Deportivo Pasto",
-        "Deportes Tolima", "Envigado", "Independiente MedellÌn", "Independiente Santa Fe",
-        "Junior", "La Equidad", "Millonarios", "Once Caldas", "UniÛn Magdalena", "Jaguares"
+        "√Åguilas Doradas", "Am√©rica de Cali", "Atl√©tico Bucaramanga", "Atl√©tico Huila",
+        "Atl√©tico Nacional", "Boyac√° Chic√≥", "Deportivo Cali", "Deportivo Pasto",
+        "Deportes Tolima", "Envigado", "Independiente Medell√≠n", "Independiente Santa Fe",
+        "Junior", "La Equidad", "Millonarios", "Once Caldas", "Uni√≥n Magdalena", "Jaguares"
     },
-                    "Per˙ Liga 1" => new List<string>
+                    "Per√∫ Liga 1" => new List<string>
     {
-        "Alianza AtlÈtico", "Alianza Lima", "AtlÈtico Grau", "Binacional", "CÈsar Vallejo",
+        "Alianza Atl√©tico", "Alianza Lima", "Atl√©tico Grau", "Binacional", "C√©sar Vallejo",
         "Carlos A. Mannucci", "Cantolao", "Cusco FC", "Cienciano", "Deportivo Garcilaso",
         "Deportivo Municipal", "Melgar", "Sport Boys", "Sport Huancayo", "Universitario",
-        "UTC", "UniÛn Comercio"
+        "UTC", "Uni√≥n Comercio"
     },
-                    "Uruguay Primera DivisiÛn" => new List<string>
+                    "Uruguay Primera Divisi√≥n" => new List<string>
     {
         "Boston River", "Cerro Largo", "Danubio", "Defensor Sporting", "Deportivo Maldonado",
-        "FÈnix", "La Luz", "Liverpool", "Montevideo City Torque", "Montevideo Wanderers",
-        "Nacional", "PeÒarol", "Plaza Colonia", "Racing", "River Plate", "Cerro"
+        "F√©nix", "La Luz", "Liverpool", "Montevideo City Torque", "Montevideo Wanderers",
+        "Nacional", "Pe√±arol", "Plaza Colonia", "Racing", "River Plate", "Cerro"
     },
 
 
                     "Ecuador Serie A" => new List<string>
     {
-        "Aucas", "Barcelona SC", "Cumbay·", "DelfÌn", "Deportivo Cuenca",
+        "Aucas", "Barcelona SC", "Cumbay√°", "Delf√≠n", "Deportivo Cuenca",
         "El Nacional", "Emelec", "Gualaceo", "Guayaquil City", "Independiente del Valle",
         "LDU Quito", "Libertad", "Mushuc Runa", "Orense", "Tecnico Universitario"
     },
-                    "Paraguay Primera DivisiÛn" => new List<string>
+                    "Paraguay Primera Divisi√≥n" => new List<string>
     {
-        "Cerro PorteÒo", "Club GuaranÌ", "General Caballero", "GuaireÒa", "Libertad",
-        "Nacional", "Olimpia", "Resistencia", "Sportivo Ameliano", "Sportivo LuqueÒo",
+        "Cerro Porte√±o", "Club Guaran√≠", "General Caballero", "Guaire√±a", "Libertad",
+        "Nacional", "Olimpia", "Resistencia", "Sportivo Ameliano", "Sportivo Luque√±o",
         "Tacuary", "Trinidense"
     },
-                    "Bolivia Primera DivisiÛn" => new List<string>
+                    "Bolivia Primera Divisi√≥n" => new List<string>
     {
-        "Always Ready", "Aurora", "Blooming", "BolÌvar", "Guabir·",
-        "Independiente Petrolero", "Nacional PotosÌ", "Oriente Petrolero",
+        "Always Ready", "Aurora", "Blooming", "Bol√≠var", "Guabir√°",
+        "Independiente Petrolero", "Nacional Potos√≠", "Oriente Petrolero",
         "Palmaflor", "Real Santa Cruz", "Royal Pari", "The Strongest",
-        "Universitario de Vinto", "Vaca DÌez", "Libertad Gran MamorÈ"
+        "Universitario de Vinto", "Vaca D√≠ez", "Libertad Gran Mamor√©"
     },
 
 
-                    "Venezuela Primera DivisiÛn" => new List<string>
+                    "Venezuela Primera Divisi√≥n" => new List<string>
     {
         "Academia Puerto Cabello", "Angostura", "Caracas FC", "Carabobo", "Deportivo La Guaira",
-        "Deportivo Lara", "Deportivo T·chira", "Estudiantes de MÈrida", "Hermanos Colmen·rez",
+        "Deportivo Lara", "Deportivo T√°chira", "Estudiantes de M√©rida", "Hermanos Colmen√°rez",
         "Metropolitanos", "Mineros de Guayana", "Monagas", "Portuguesa FC", "Rayo Zuliano",
         "Zamora FC"
     },
@@ -161,42 +255,42 @@ namespace soc
 
 
 
-                    // **CentroamÈrica** - Equipos de las ligas centroamericanas
-                    "Costa Rica Primera DivisiÛn" => new List<string>
+                    // **Centroam√©rica** - Equipos de las ligas centroamericanas
+                    "Costa Rica Primera Divisi√≥n" => new List<string>
     {
-        "AD Guanacasteca", "AD San Carlos", "CS CartaginÈs", "Deportivo Saprissa",
-        "Grecia", "Herediano", "Jicaral Sercoba", "LimÛn FC", "Municipal PÈrez ZeledÛn",
-        "Puntarenas FC", "Santos de Gu·piles", "Sporting FC"
+        "AD Guanacasteca", "AD San Carlos", "CS Cartagin√©s", "Deportivo Saprissa",
+        "Grecia", "Herediano", "Jicaral Sercoba", "Lim√≥n FC", "Municipal P√©rez Zeled√≥n",
+        "Puntarenas FC", "Santos de Gu√°piles", "Sporting FC"
     },
-                    "El Salvador Primera DivisiÛn" => new List<string>
+                    "El Salvador Primera Divisi√≥n" => new List<string>
     {
-        "Alianza", "¡guila", "Chalatenango", "FAS", "Firpo", "Isidro Metap·n",
-        "Jocoro", "LimeÒo", "Once Deportivo", "Santa Tecla"
+        "Alianza", "√Åguila", "Chalatenango", "FAS", "Firpo", "Isidro Metap√°n",
+        "Jocoro", "Lime√±o", "Once Deportivo", "Santa Tecla"
     },
                     "Guatemala Liga Nacional" => new List<string>
     {
         "Antigua GFC", "Coban Imperial", "Deportivo Guastatoya", "Deportivo Malacateco",
-        "Municipal", "Xelaj˙ MC", "Santa Lucia Cotzumalguapa", "Achuapa", "Solol·", "Iztapa"
+        "Municipal", "Xelaj√∫ MC", "Santa Lucia Cotzumalguapa", "Achuapa", "Solol√°", "Iztapa"
     },
                     "Honduras Liga Nacional" => new List<string>
     {
-        "AtlÈtico Choloma", "Club Deportivo Olimpia", "Club Deportivo Motagua", "Real EspaÒa",
+        "Atl√©tico Choloma", "Club Deportivo Olimpia", "Club Deportivo Motagua", "Real Espa√±a",
         "Club Deportivo Honduras Progreso", "Platense", "Juticalpa FC", "UPNFM", "Vida"
     },
 
 
                     "Nicaragua Liga Primera" => new List<string>
     {
-        "Real EstelÌ", "DiriangÈn", "Chinandega", "Club Deportivo Walter Ferreti", "EstelÌ",
+        "Real Estel√≠", "Diriang√©n", "Chinandega", "Club Deportivo Walter Ferreti", "Estel√≠",
         "Jinotega", "Managua FC", "Nicaragua FC", "Unan Managua", "Deportivo Ocotal"
     },
 
-                    // **NorteamÈrica** - Equipos de las ligas de NorteamÈrica
-                    "MÈxico Liga MX" => new List<string>
+                    // **Norteam√©rica** - Equipos de las ligas de Norteam√©rica
+                    "M√©xico Liga MX" => new List<string>
     {
-        "AmÈrica", "Atlas", "Cruz Azul", "Club LeÛn", "Club Tijuana", "Chivas", "Monterrey",
-        "Necaxa", "Puebla", "QuerÈtaro", "Santos Laguna", "Toluca", "Tigres UANL", "Pumas UNAM",
-        "Ju·rez", "Mazatl·n", "Pachuca"
+        "Am√©rica", "Atlas", "Cruz Azul", "Club Le√≥n", "Club Tijuana", "Chivas", "Monterrey",
+        "Necaxa", "Puebla", "Quer√©taro", "Santos Laguna", "Toluca", "Tigres UANL", "Pumas UNAM",
+        "Ju√°rez", "Mazatl√°n", "Pachuca"
     },
                     "Estados Unidos Major League Soccer" => new List<string>
     {
@@ -206,14 +300,14 @@ namespace soc
         "Orlando City", "Philadelphia Union", "Portland Timbers", "Real Salt Lake", "San Jose Earthquakes",
         "Seattle Sounders", "Sporting Kansas City", "Toronto FC", "Vancouver Whitecaps"
     },
-                    "Canad· Major League Soccer" => new List<string>
+                    "Canad√° Major League Soccer" => new List<string>
     {
         "Toronto FC", "Vancouver Whitecaps", "Montreal Impact"
     },
 
 
 
-                    "Sud·frica Premier Division" => new List<string>
+                    "Sud√°frica Premier Division" => new List<string>
 {
     "AmaZulu", "Cape Town City", "Chippa United", "Golden Arrows", "Kaizer Chiefs",
     "Maritzburg United", "Mamelodi Sundowns", "Moroka Swallows", "Orlando Pirates",
@@ -229,6 +323,67 @@ namespace soc
 },
 
 
+                    // **Asia y Pa√≠ses √Årabes** - Equipos de las ligas asi√°ticas y √°rabes
+
+                    "Saudi Pro League" => new List<string>
+{
+    "Al Ahli", "Al Ettifaq", "Al Fatesh", "Al Hilal", "Al Ittihad",
+    "Al Nassr", "Al Raed", "Al Shabab", "Al Tai", "Al Wehda",
+    "Abha", "Dhamk", "Al Batin"
+},
+
+                    "Arabian Gulf League" => new List<string>
+{
+    "Al Ain", "Al Jazira", "Al Nasr", "Al Wahda", "Al Shabab",
+    "Sharjah", "Baniyas", "Khorfakkan", "Ajman", "Al Dhafra",
+    "Ittihad Kalba", "Fujairah", "Hatta"
+},
+
+                    "Qatar Stars League" => new List<string>
+{
+    "Al Arabi", "Al Duhail", "Al Gharafa", "Al Khor", "Al Sadd",
+    "Al Shamal", "Al Rayyan", "Al Wakrah", "Umm Salal", "Al Ahli",
+    "Qatar SC", "Al Markhiya"
+},
+
+                    "Persian Gulf Pro League" => new List<string>
+{
+    "Esteghlal", "Persepolis", "Al Nassr", "Foolad", "Sepahan",
+    "Naft Tehran", "Zob Ahan", "Tractor Sazi", "Shahr Khodro", "Sima Bakoon",
+    "Aluminum Arak", "Gol Gohar"
+},
+
+                    "Iraqi Premier League" => new List<string>
+{
+    "Al Zawraa", "Al Shorta", "Al Talaba", "Al Quwa Al Jawiya", "Al Naft",
+    "Al Karkh", "Al Minaa", "Najaf FC", "Duhok", "Al Naft",
+    "Erbil", "Al Hikma"
+},
+
+                    "Kuwaiti Premier League" => new List<string>
+{
+    "Al Arabi", "Al Kuwait", "Al Salmiya", "Al Qadsia", "Al Yarmouk",
+    "Al Fahaheel", "Al Jahra", "Al Shabab", "Khaitan", "Sulaibikhat",
+    "Al Naser", "Fahaheel"
+},
+
+                    "Chinese Super League" => new List<string>
+{
+    "Beijing Guoan", "Guangzhou Evergrande", "Shanghai SIPG", "Shandong Taishan",
+    "Tianjin Teda", "Hebei China Fortune", "Changchun Yatai", "Chongqing Lifan",
+    "Dalian Professional", "Shenzhen", "Shanghai Shenhua", "Henan Songshan Longmen"
+},
+
+                    "J1 League" => new List<string>
+{
+    "Hokkaido Consadole Sapporo", "Kashima Antlers", "Kashiwa Reysol", "Vissel Kobe",
+    "Urawa Reds", "Gamba Osaka", "Yokohama F. Marinos", "Sanfrecce Hiroshima",
+    "FC Tokyo", "Nagoya Grampus", "Omiya Ardija", "Sagan Tosu", "Cerezo Osaka",
+    "Shonan Bellmare", "Albirex Niigata"
+}
+
+
+
 
 
 
@@ -240,7 +395,7 @@ namespace soc
                 };
 
 
-                // Navega a una nueva p·gina mostrando los equipos
+                // Navega a una nueva p√°gina mostrando los equipos
                 await Navigation.PushAsync(new TeamsPage(league, teams));
             }
         }
