@@ -17,17 +17,11 @@
         
         
         <!-- Imagen de la liga -->
+        <!-- Imagen de la liga -->
         <Image Source="{Binding LigaImagen}" 
-               Aspect="AspectFill" 
-              
-              WidthRequest="200" 
-              HeightRequest="200" 
-
-
-
-
-
-            HorizontalOptions="Center" />
+               Aspect="AspectFit" 
+               HeightRequest="250" 
+               HorizontalOptions="Center" />
 
 
 

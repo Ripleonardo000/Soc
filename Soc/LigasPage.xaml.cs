@@ -20,7 +20,7 @@ public partial class LigasPage : ContentPage
         // Inicializar la lista de ligas
         Ligas = new List<string>
         {
-            "cbbche",
+            
             "Premier League",
             "Serie A",
             "Bundesliga",

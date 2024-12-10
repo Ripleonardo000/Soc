@@ -19,7 +19,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:JugadoresPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Ligas"
+    <FlyoutItem Title="Ligas Historia"
                 FlyoutIcon="https://cdn-icons-png.freepik.com/512/17771/17771553.png">
         <ShellContent ContentTemplate="{DataTemplate local:LigasPage}" />
     </FlyoutItem>
