@@ -5,14 +5,13 @@
              Title="Clubes de Fútbol">
 
     <Grid>
-        <!-- Background Image -->
+       
         <Image Source="https://images6.alphacoders.com/551/thumb-1920-551432.jpg"
                Aspect="AspectFill"
                Opacity="0.8"
                VerticalOptions="FillAndExpand"
                HorizontalOptions="FillAndExpand"/>
 
-        <!-- Overlay for better text contrast -->
         <BoxView Color="Black"
                  Opacity="0.8"
                  VerticalOptions="FillAndExpand"
@@ -23,7 +22,8 @@
                    FontSize="24"
                    HorizontalOptions="Center" 
                    FontAttributes="Bold"
-                   FontFamily="Lucida Handwriting"/>
+                   FontFamily="Lucida Handwriting"
+                   TextColor="White"/>
 
             <!-- Premier League -->
             <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">

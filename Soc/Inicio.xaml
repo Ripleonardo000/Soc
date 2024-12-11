@@ -5,30 +5,201 @@
              Title="Inicio">
 
     <Grid>
-        <!-- Imagen de fondo -->
-        <Image Source="imagen.png"
+
+        <Image Source="https://images2.alphacoders.com/135/thumb-1920-1352154.png"
                Aspect="AspectFill"
                VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand" />
+               HorizontalOptions="FillAndExpand"
+               Opacity="0.8" />
 
-        <!-- Contenido superpuesto -->
+        <BoxView Color="Black"
+                 Opacity="0.8"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+
         <ScrollView>
-            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Padding="20,0,20,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
 
-                <!-- Título principal -->
-                <Label Text="¡Bienvenido a la página de fútbol!"
-                       FontSize="30"
+                <Label Text="Bienvenido a GoalTrack"
+                       FontSize="50"
                        FontAttributes="Bold"
-                       TextColor="White"
+                       TextColor="#C237DB"
                        HorizontalOptions="Center"
+                       FontFamily="Lucida Handwriting"
                        Margin="0,20,0,0" />
+                <Image Source="https://images6.alphacoders.com/551/thumb-1920-551432.jpg"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
 
-                <!-- Subtítulo -->
-                <Label Text="Explora información sobre clubes y jugadores en las pestañas."
+                <Label Text="¡Vive la pasión del fútbol como nunca antes!"
                        FontSize="18"
                        TextColor="LightGray"
-                       HorizontalOptions="Center"
+                       HorizontalOptions="Start"
                        Margin="0,10,0,0" />
+                <Label Text="Aquí encontrarás todo lo que necesitas para mantenerte informado, emocionado y conectado con el deporte rey. Este es el lugar perfecto para fanáticos como tú, que quieren estar al tanto de lo que sucede en el mundo del fútbol, desde las ligas más famosas hasta los eventos más emocionantes."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://giffiles.alphacoders.com/219/219728.gif"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="¿Qué ofrecemos?"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="#C237DB"
+                       FontFamily="Lucida Handwriting"
+                       HorizontalOptions="Center"
+                       Margin="0,20,0,10" />
+
+
+                <Label Text="Explora Jugadores y Clubes"
+                       FontSize="18"
+                       FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Sumérgete en los detalles de cada club y descubre a sus jugadores estrella. Conoce sus estadísticas, logros y mucho más, todo en un solo lugar. No importa cuál sea tu equipo favorito, aquí encontrarás todo lo que necesitas saber."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://images5.alphacoders.com/127/thumb-1920-1277890.jpg"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Revive la Historia del Fútbol"
+                       FontSize="18"
+                       FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="¿Te apasiona la historia de las ligas y los clubes? Viaja al pasado y descubre cómo nacieron las competiciones más importantes. Aprende sobre los momentos que marcaron un antes y un después en el fútbol mundial."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://avatarfiles.alphacoders.com/743/thumb-1920-74377.jpg"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Todas las Ligas en un Solo Lugar"
+                       FontSize="18"
+                                              FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Explora el mundo del fútbol con nuestra sección dedicada a las ligas. Desde las más populares hasta las más emergentes, conoce a los clubes que las conforman y sigue sus trayectorias durante la temporada."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://images8.alphacoders.com/464/thumb-1920-464214.jpg"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Próximos Partidos"
+                       FontSize="18"
+                                              FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Nunca más te perderás un partido importante. Con nuestro calendario actualizado, siempre sabrás quién juega, cuándo y dónde. Planifica tus días de fútbol con nosotros."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://giffiles.alphacoders.com/219/219182.gif"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Tabla de Posiciones"
+                       FontSize="18"
+                                             FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Sigue de cerca la competencia. Consulta las tablas de posiciones de tus ligas favoritas y descubre quién está en la cima, quién lucha por salir del descenso y quién está en la zona media peleando por más."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://pbs.twimg.com/media/GX33WvkWEAAlJhA.jpg:large"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Goleadores de Cada Liga"
+                       FontSize="18"
+                                              FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Los goles son la esencia del fútbol. Por eso, te traemos un seguimiento de los máximos goleadores de cada liga. Descubre quién lidera la tabla de anotadores y cómo están marcando la diferencia en sus equipos."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://giffiles.alphacoders.com/221/221743.gif"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Partidos Gratis para Ti"
+                       FontSize="18"
+                                              FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,20" />
+                <Label Text="¡Disfruta de la emoción del fútbol sin restricciones! Ofrecemos partidos en vivo para que no te pierdas ni un minuto de la acción. Vive la experiencia desde la comodidad de tu hogar o donde quiera que estés."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://images5.alphacoders.com/133/thumb-1920-1338700.png"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Únete a la Comunidad del Fútbol"
+                       FontSize="18"
+                                             FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Este espacio no solo es para informarte, también es para compartir la pasión. Invita a tus amigos, discute sobre tus equipos favoritos y haz de GoalTrack tu lugar preferido para el fútbol."
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://images6.alphacoders.com/551/thumb-1920-551432.jpg"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
+                <Label Text="Prepárate para disfrutar del deporte que mueve al mundo"
+                       FontSize="18"
+                                             FontAttributes="Bold"
+TextColor="#C237DB"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Label Text="Desde estadísticas hasta transmisiones en vivo, lo tenemos todo para ti. Explora, comparte y vive el fútbol al máximo con nosotros. ¡Comienza ahora y lleva tu pasión futbolística al siguiente nivel!"
+                       FontSize="18"
+                       TextColor="LightGray"
+                       HorizontalOptions="Start"
+                       Margin="0,10,0,0" />
+                <Image Source="https://giffiles.alphacoders.com/218/218821.gif"
+                       HorizontalOptions="Center"
+                       HeightRequest="400"
+                       Margin="0,10,0,0" />
+
             </StackLayout>
         </ScrollView>
     </Grid>

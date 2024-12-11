@@ -4,49 +4,72 @@
              x:Class="soc.JugadoresPage"
              Title="Jugadores">
 
-    <ScrollView>
-        <StackLayout Padding="20" Spacing="15">
+   
+    <Grid>
+      
+        <Image Source="https://images2.alphacoders.com/136/thumb-1920-1360086.png"
+               Aspect="AspectFill"
+               Opacity="0.8">
+            <Image.GestureRecognizers>
+             
+            </Image.GestureRecognizers>
+        </Image>
+        <BoxView Color="Black" Opacity="0.5" />
 
-            <!-- Picker para seleccionar la liga -->
-            <Picker x:Name="LigaPicker" 
-                    Title="Selecciona una liga" 
-                    SelectedIndexChanged="OnLigaSelectedIndexChanged">
-                <Picker.Items>
-                    <x:String>Premier League</x:String>
-                    <x:String>Serie A</x:String>
-                    <x:String>Bundesliga</x:String>
-                    <x:String>Ligue 1</x:String>
-                    <x:String>La Liga</x:String>
-                    <!-- Nueva liga agregada -->
-                    <x:String>MLS</x:String>
-                    <!-- Nueva liga agregada -->
-                    
-                        <!-- Nueva liga agregada -->
-                    <x:String>Primeira Liga</x:String>
-                    <!-- Nueva liga agregada -->
-                </Picker.Items>
-            </Picker>
+        <ScrollView Padding="20">
+            <StackLayout Spacing="15">
 
-            <!-- Picker para seleccionar el equipo -->
-            <Picker x:Name="EquipoPicker" 
-                    Title="Selecciona un equipo" 
-                    SelectedIndexChanged="OnEquipoSelectedIndexChanged">
-                <!-- Los equipos se agregarán dinámicamente -->
-            </Picker>
+          
+                <Frame BorderColor="#C237DB" BackgroundColor="Transparent" Padding="5">
+                    <Picker x:Name="LigaPicker" 
+                            Title="Selecciona una liga" 
+                            SelectedIndexChanged="OnLigaSelectedIndexChanged"
+                            TextColor="#C237DB"
+                            FontAttributes="Bold"
+                            BackgroundColor="Transparent"
+                            TitleColor="Red"
+                            FontSize="20">
+           
+                        <Picker.Items>
+                            <x:String>Premier League</x:String>
+                            <x:String>Serie A</x:String>
+                            <x:String>Bundesliga</x:String>
+                            <x:String>Ligue 1</x:String>
+                            <x:String>La Liga</x:String>
+                            <x:String>MLS</x:String>
+                            <x:String>Primeira Liga</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
 
-            <!-- CollectionView para mostrar los jugadores -->
-            <CollectionView x:Name="JugadoresCollectionView" 
-                            ItemsSource="{Binding Jugadores}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Padding="10" Spacing="5">
-                            <Label Text="{Binding Nombre}" FontSize="18" />
-                            <Label Text="{Binding Posicion}" FontSize="14" TextColor="Gray" />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                <Frame BorderColor="#C237DB" BackgroundColor="Transparent" Padding="5">
+                    <Picker x:Name="EquipoPicker" 
+                            Title="Selecciona un equipo" 
+                            FontAttributes="Bold"
+                            SelectedIndexChanged="OnEquipoSelectedIndexChanged"
+                            TextColor="#C237DB"
+                            BackgroundColor="Transparent"
+                            TitleColor="Red"
+                            FontSize="20">
+                     
+         
+                    </Picker>
+                </Frame>
 
-        </StackLayout>
-    </ScrollView>
+                <CollectionView x:Name="JugadoresCollectionView" 
+                                ItemsSource="{Binding Jugadores}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" Spacing="5">
+                                <Label Text="{Binding Nombre}" FontSize="18" TextColor="#C237DB"/>
+                                <Label Text="{Binding Posicion}" FontSize="14" TextColor="White"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
 </ContentPage>
