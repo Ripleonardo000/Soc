@@ -20,8 +20,8 @@
                     <!-- Nueva liga agregada -->
                     <x:String>MLS</x:String>
                     <!-- Nueva liga agregada -->
-                    <x:String>Eredivisie</x:String>
-                    <!-- Nueva liga agregada -->
+                    
+                        <!-- Nueva liga agregada -->
                     <x:String>Primeira Liga</x:String>
                     <!-- Nueva liga agregada -->
                 </Picker.Items>
