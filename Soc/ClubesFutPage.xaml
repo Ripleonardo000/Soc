@@ -3,11 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="soc.ClubesFutPage"
              Title="Clubes de Fútbol">
-    <ScrollView>
+
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="https://images6.alphacoders.com/551/thumb-1920-551432.jpg"
+               Aspect="AspectFill"
+               Opacity="0.8"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <!-- Overlay for better text contrast -->
+        <BoxView Color="Black"
+                 Opacity="0.8"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+        <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="15">
-            <Label Text="Seleccione una liga:" 
+            <Label Text="Conoce los clubes mas importantes de todas las ligas aqui!" 
                    FontSize="24"
-                   HorizontalOptions="Center" />
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"
+                   FontFamily="Lucida Handwriting"/>
 
             <!-- Premier League -->
             <Grid VerticalOptions="Start" HorizontalOptions="StartAndExpand">
@@ -15,7 +31,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://1000marcas.net/wp-content/uploads/2020/03/Premier-League-Logo-1.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -37,7 +53,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://logolook.net/wp-content/uploads/2023/11/Italian-Serie-A-Logo.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -59,7 +75,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/1200px-Bundesliga_logo_%282017%29.svg.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -81,7 +97,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/4/49/Ligue1_Uber_Eats_logo.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -103,7 +119,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg/2560px-LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -125,7 +141,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eredivisie_nieuw_logo_2017-.svg/1280px-Eredivisie_nieuw_logo_2017-.svg.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -147,7 +163,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://1000marcas.net/wp-content/uploads/2020/03/Portuguese-Primeira-Liga-Logo-1.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -168,7 +184,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://1000marcas.net/wp-content/uploads/2020/03/Russian-Premier-League-logo.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -190,7 +206,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -212,7 +228,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://www.thesportsdb.com/images/media/league/badge/rytd4h1616937728.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -234,7 +250,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/BetPlay-Dimayor_logo.svg/1200px-BetPlay-Dimayor_logo.svg.png"
                        HeightRequest="40"
  WidthRequest="40"
                        VerticalOptions="Center"
@@ -256,7 +272,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://i.pinimg.com/originals/47/45/76/4745769af544f2771531c6751a48eb98.png"
                        HeightRequest="40"
  WidthRequest="40"
                        VerticalOptions="Center"
@@ -278,7 +294,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_Campeonato_Uruguayo_Primera_Divisi%C3%B3n_%28cropped%29.png"
                         HeightRequest="40"
  WidthRequest="40"
                        VerticalOptions="Center"
@@ -300,7 +316,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://imagecache.365scores.com/image/upload/f_png,w_250,h_250,c_limit,q_auto:eco,d_Countries:Round:51.png/v5/Competitions/5497"
                         HeightRequest="40"
  WidthRequest="40"
                        VerticalOptions="Center"
@@ -322,7 +338,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://www.thesportsdb.com/images/media/league/badge/k1sbmx1652126723.png"
                        HeightRequest="40"
  WidthRequest="40"
                        VerticalOptions="Center"
@@ -344,7 +360,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="https://static.vecteezy.com/system/resources/previews/024/553/853/non_2x/colorful-eagle-head-logo-pop-art-style-eagle-face-sticker-pastel-cute-colors-ai-generated-png.png"
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/a/a6/Ligabolivia.png"
                        HeightRequest="40"
                        WidthRequest="40"
                        VerticalOptions="Center"
@@ -367,553 +383,423 @@
 
 
 
-
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                
-                
-                
-                
-                
-                <Button.Background>
-                    
-                    
-                    
-                    <!-- Gradiente de Venezuela -->
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Yellow" Offset="0.0" />
-                        <GradientStop Color="Blue" Offset="0.5" />
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Venezuela Primera División"/>
-                        <On Platform="Android" Value="Venezuela Primera División"/>
-                        <On Platform="UWP" Value="Venezuela Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-
-
-
+            <!-- Venezuela Primera División -->
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/b/b5/Liga_FUTVE_2023.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Venezuela Primera División</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Costa Rica Primera División -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                       
-                        
-                        
-                        <GradientStop Color="Blue" Offset="0.66" />
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Costa Rica Primera División"/>
-                        <On Platform="Android" Value="Costa Rica Primera División"/>
-                        <On Platform="UWP" Value="Costa Rica Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Liga_Promerica.svg/1280px-Liga_Promerica.svg.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Costa Rica Primera División</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- El Salvador Primera División -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Blue" Offset="0.0" />
-                        
-                        
-                        <GradientStop Color="Red" Offset="0.66" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="El Salvador Primera División"/>
-                        <On Platform="Android" Value="El Salvador Primera División"/>
-                        <On Platform="UWP" Value="El Salvador Primera División"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://iconape.com/wp-content/png_logo_vector/primera-division-futbol-el-salvador-logo.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>El Salvador Primera División</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Guatemala Liga Nacional -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Blue" Offset="0.0" />
-                        
-                        
-                        <GradientStop Color="Red" Offset="0.66" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Guatemala Liga Nacional"/>
-                        <On Platform="Android" Value="Guatemala Liga Nacional"/>
-                        <On Platform="UWP" Value="Guatemala Liga Nacional"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://static.flashscore.com/res/image/data/jubuX0O4-vTLj5hDm.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Guatemala Liga Nacional</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Honduras Liga Nacional -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        
-                        
-                        <GradientStop Color="Blue" Offset="0.66" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Honduras Liga Nacional"/>
-                        <On Platform="Android" Value="Honduras Liga Nacional"/>
-                        <On Platform="UWP" Value="Honduras Liga Nacional"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://tmssl.akamaized.net//images/logo/header/hocp.png?lm=1642198877"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Honduras Liga Nacional</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Nicaragua Liga Primera -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        
-                        
-                        <GradientStop Color="Blue" Offset="0.66" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Nicaragua Liga Primera"/>
-                        <On Platform="Android" Value="Nicaragua Liga Primera"/>
-                        <On Platform="UWP" Value="Nicaragua Liga Primera"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://refereeprocm.s3.us-east-1.amazonaws.com/logos/fe252f51-589d-4e02-8c96-5263d4fae61c"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Nicaragua Liga Primera</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- México Liga MX -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Green" Offset="0.0" />
-                        
-                        
-                        
-                        
-                        <GradientStop Color="Red" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="México Liga MX"/>
-                        <On Platform="Android" Value="México Liga MX"/>
-                        <On Platform="UWP" Value="México Liga MX"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/MX_logo.png/305px-MX_logo.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>México Liga MX</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Estados Unidos Major League Soccer -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        
-                        
-                        <GradientStop Color="Blue" Offset="0.66" />
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Estados Unidos Major League Soccer"/>
-                        <On Platform="Android" Value="Estados Unidos Major League Soccer"/>
-                        <On Platform="UWP" Value="Estados Unidos Major League Soccer"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/800px-MLS_crest_logo_RGB_gradient.svg.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Estados Unidos Major League Soccer</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Canadá Major League Soccer -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="Red" Offset="0.0" />
-                        
-                        
-                        
-                        
-                        <GradientStop Color="Red" Offset="1.0" />
-                        
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Canadá Major League Soccer"/>
-                        <On Platform="Android" Value="Canadá Major League Soccer"/>
-                        <On Platform="UWP" Value="Canadá Major League Soccer"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Canada-Badge-Outline.png/1200px-Canada-Badge-Outline.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Canadá Major League Soccer</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Sudáfrica Premier Division -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#007A5E" Offset="0.0" />
-                        <!-- Green (South Africa flag) -->
-                        <GradientStop Color="#F1C53E" Offset="1.0" />
-                        <!-- Yellow (South Africa flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Sudáfrica Premier Division"/>
-                        <On Platform="Android" Value="Sudáfrica Premier Division"/>
-                        <On Platform="UWP" Value="Sudáfrica Premier Division"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Premier_Soccer_League_logo.svg/800px-Premier_Soccer_League_logo.svg.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Sudáfrica Premier Division</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Egipto Premier League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#CE1126" Offset="0.0" />
-                        <!-- Red (Egypt flag) -->
-                        <GradientStop Color="#009639" Offset="1.0" />
-                        <!-- Green (Egypt flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Egipto Premier League"/>
-                        <On Platform="Android" Value="Egipto Premier League"/>
-                        <On Platform="UWP" Value="Egipto Premier League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
-
-
-
-
-
-
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/e/eb/Egyptian_Premier_League_logo_2023.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Egipto Premier League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Saudi Pro League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#006C3F" Offset="0.0" />
-                        <!-- Green (Saudi flag) -->
-                        <GradientStop Color="#F1C53E" Offset="1.0" />
-                        <!-- Yellow (Saudi flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Saudi Pro League"/>
-                        <On Platform="Android" Value="Saudi Pro League"/>
-                        <On Platform="UWP" Value="Saudi Pro League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Roshn_Saudi_League_Logo.svg/1200px-Roshn_Saudi_League_Logo.svg.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0" />
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Saudi Pro League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Arabian Gulf League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#009639" Offset="0.0" />
-                        <!-- Green (UAE flag) -->
-                        <GradientStop Color="#EF4135" Offset="1.0" />
-                        <!-- Red (UAE flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Arabian Gulf League"/>
-                        <On Platform="Android" Value="Arabian Gulf League"/>
-                        <On Platform="UWP" Value="Arabian Gulf League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://images.fotmob.com/image_resources/logo/leaguelogo/9830.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Arabian Gulf League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Qatar Stars League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#9E1B32" Offset="0.0" />
-                        <!-- Maroon (Qatar flag) -->
-                        <GradientStop Color="#F4F2F2" Offset="1.0" />
-                        <!-- White (Qatar flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Qatar Stars League"/>
-                        <On Platform="Android" Value="Qatar Stars League"/>
-                        <On Platform="UWP" Value="Qatar Stars League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://play-lh.googleusercontent.com/Y-QomE9CzuN70Ge5zq0cfMXvgyoWMU6XN2qVJlihiyMot5nzw9UvdoQK3ARY2Ca7a14=w600-h300-pc0xffffff-pd"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Qatar Stars League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Persian Gulf Pro League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#018F6D" Offset="0.0" />
-                        <!-- Green (Iran flag) -->
-                        <GradientStop Color="#D52B1E" Offset="1.0" />
-                        <!-- Red (Iran flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Persian Gulf Pro League"/>
-                        <On Platform="Android" Value="Persian Gulf Pro League"/>
-                        <On Platform="UWP" Value="Persian Gulf Pro League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://i.namu.wiki/i/fZ4qrtNFObE17jN3fX0jrC_Y1VXcoQT4OP-NHTjo1WN-otCklkEEow_74vPcOnJpZw2I1T2vlAG2HT-U8v3rlA.webp"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Persian Gulf Pro League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Iraqi Premier League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#006C3F" Offset="0.0" />
-                        <!-- Green (Iraq flag) -->
-                        <GradientStop Color="#F00D28" Offset="1.0" />
-                        <!-- Red (Iraq flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Iraqi Premier League"/>
-                        <On Platform="Android" Value="Iraqi Premier League"/>
-                        <On Platform="UWP" Value="Iraqi Premier League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/1/1d/Iraqi_Premier_League_Logo_%28Edited%29.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Iraqi Premier League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Kuwaiti Premier League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#009639" Offset="0.0" />
-                        <!-- Green (Kuwait flag) -->
-                        <GradientStop Color="#F1C53E" Offset="1.0" />
-                        <!-- Yellow (Kuwait flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Kuwaiti Premier League"/>
-                        <On Platform="Android" Value="Kuwaiti Premier League"/>
-                        <On Platform="UWP" Value="Kuwaiti Premier League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://i.namu.wiki/i/TruiqK_nXnYZEhc8l0NnHtBb0Lfnsmw51em2ByvzdNV4O_uIjyj_bNq2g3FJWZg2Kgim2hmu95qpMMbU8Flj1g.webp"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Kuwaiti Premier League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- Chinese Super League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#DE2910" Offset="0.0" />
-                        <!-- Red (China flag) -->
-                        <GradientStop Color="#FFCD00" Offset="1.0" />
-                        <!-- Yellow (China flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Chinese Super League"/>
-                        <On Platform="Android" Value="Chinese Super League"/>
-                        <On Platform="UWP" Value="Chinese Super League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Chinese_Super_League.svg/1200px-Chinese_Super_League.svg.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>Chinese Super League</Button.Text>
+                </Button>
+            </Grid>
 
             <!-- J1 League -->
-            <Button FontAttributes="Bold"
-        FontSize="18"
-        TextColor="White" 
-        BackgroundColor="Transparent" 
-        BorderColor="White"
-        BorderWidth="2"
-        CornerRadius="10"
-        Clicked="OnLeagueClicked">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="1,1">
-                        <GradientStop Color="#BC002D" Offset="0.0" />
-                        <!-- Red (Japan flag) -->
-                        <GradientStop Color="#FFFFFF" Offset="1.0" />
-                        <!-- White (Japan flag) -->
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Text>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="J1 League"/>
-                        <On Platform="Android" Value="J1 League"/>
-                        <On Platform="UWP" Value="J1 League"/>
-                    </OnPlatform>
-                </Button.Text>
-            </Button>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/J1_logo.png/170px-J1_logo.png"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       Grid.Column="0"/>
+                <Button FontAttributes="Bold"
+                        FontSize="18"
+                        TextColor="#C237DB"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Start"
+                        Clicked="OnLeagueClicked"
+                        Grid.Column="1">
+                    <Button.Text>J1 League</Button.Text>
+                </Button>
+            </Grid>
 
 
 
@@ -925,4 +811,5 @@
 
         </VerticalStackLayout>
         </ScrollView>
-    </ContentPage>
+    </Grid>
+</ContentPage>
