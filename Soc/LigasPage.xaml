@@ -3,58 +3,60 @@
              x:Class="soc.LigasPage"
              Title="Ligas">
 
-    <StackLayout Padding="20" VerticalOptions="Center">
-        <Label Text="Explora las ligas más importantes del mundo"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <Grid>
+            <!-- Imagen de fondo -->
+            <Image Source="https://images5.alphacoders.com/446/446936.jpg"
+                   Aspect="AspectFill"
+                   Opacity="0.8" />
+            <!-- Superposición negra -->
+            <BoxView Color="Black" Opacity="0.2" />
 
-        <Label Text="Aquí puedes encontrar información sobre las ligas de fútbol destacadas como Premier League, entre otras."
-               FontSize="18"
-               HorizontalOptions="Center"
-               TextColor="Gray"
-               Margin="0,20,0,0" />
+            <!-- Contenido principal -->
+            <StackLayout Padding="20" VerticalOptions="Center">
+                <Label Text="Explora las ligas más importantes del mundo"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#C237DB" />
 
-        <!-- Usamos StackLayout o Grid para envolver el CollectionView -->
-        <StackLayout Padding="10">
-            <CollectionView ItemsSource="{Binding Ligas}">
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="20" VerticalItemSpacing="20" />
-                </CollectionView.ItemsLayout>
+                <Label Text="Aquí puedes encontrar información sobre las ligas de fútbol destacadas como Premier League, entre otras."
+                       FontSize="18"
+                       HorizontalOptions="Center"
+                       TextColor="#C237DB"
+                       Margin="0,20,0,0" />
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Padding="0"
-                               HasShadow="True"
-                               CornerRadius="30"
-                               BorderColor="White"
-                               Margin="0,5">
-                            <Button Text="{Binding}" 
-                                    FontSize="20"
-                                    TextColor="White"
-                                    BackgroundColor="Transparent"
-                                    Padding="15"
-                                    HeightRequest="80"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateCommand}"
-                                    CommandParameter="{Binding}">
-                                <Button.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="RoyalBlue" Offset="0.0" />
-                                        <GradientStop Color="SkyBlue" Offset="1.0" />
-                                    </LinearGradientBrush>
-                                </Button.Background>
+                <StackLayout Padding="10">
+                    <CollectionView ItemsSource="{Binding Ligas}">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="20" VerticalItemSpacing="20" />
+                        </CollectionView.ItemsLayout>
 
-                                <Button.Shadow>
-                                    <Shadow Brush="Black" Opacity="0.3" Radius="10" Offset="2,2"/>
-                                </Button.Shadow>
-                            </Button>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
-
-    </StackLayout>
-
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame Padding="0"
+                                       HasShadow="True"
+                                       CornerRadius="30"
+                                       BorderColor="#C237DB"
+                                       Margin="0,5">
+                                    <Button Text="{Binding}" 
+                                            FontSize="20"
+                                            TextColor="#C237DB"
+                                            BackgroundColor="Transparent"
+                                            Padding="15"
+                                            HeightRequest="80"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NavigateCommand}"
+                                            CommandParameter="{Binding}">
+                                        <Button.Shadow>
+                                            <Shadow Brush="Black" Opacity="0.3" Radius="10" Offset="2,2"/>
+                                        </Button.Shadow>
+                                    </Button>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
-

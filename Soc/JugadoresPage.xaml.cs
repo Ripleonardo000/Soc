@@ -313,6 +313,33 @@ new Jugador { Nombre = "Yeremy Pino", Posicion = "Centrocampista", Equipo = "Vil
 new Jugador { Nombre = "Thierno Barry", Posicion = "Delantero", Equipo = "Villarreal", Liga = "La Liga" },
 new Jugador { Nombre = "Pape Gueye", Posicion = "Delantero", Equipo = "Villarreal", Liga = "La Liga" },
 
+new Jugador { Nombre = "Marc-André ter Stegen", Posicion = "Portero", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Jules Koundé", Posicion = "Defensor", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Ronald Araújo", Posicion = "Defensor", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Andreas Christensen", Posicion = "Defensor", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Alejandro Balde", Posicion = "Defensor", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Frenkie de Jong", Posicion = "Centrocampista", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Gavi", Posicion = "Centrocampista", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Ilkay Gündogan", Posicion = "Centrocampista", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Robert Lewandowski", Posicion = "Delantero", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "João Félix", Posicion = "Delantero", Equipo = "FC Barcelona", Liga = "La Liga" },
+new Jugador { Nombre = "Raphinha", Posicion = "Delantero", Equipo = "FC Barcelona", Liga = "La Liga" },
+
+
+new Jugador { Nombre = "Ørjan Nyland", Posicion = "Portero", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Jesús Navas", Posicion = "Defensor", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Loïc Badé", Posicion = "Defensor", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Sergio Ramos", Posicion = "Defensor", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Adrià Pedrosa", Posicion = "Defensor", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Joan Jordán", Posicion = "Centrocampista", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Nemanja Gudelj", Posicion = "Centrocampista", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Ivan Rakitić", Posicion = "Centrocampista", Equipo =    "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Lucas Ocampos", Posicion = "Delantero", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Youssef En-Nesyri", Posicion = "Delantero", Equipo = "Sevilla", Liga = "La Liga" },
+new Jugador { Nombre = "Erik Lamela", Posicion = "Delantero", Equipo = "Sevilla", Liga = "La Liga" },
+
+
+
 
 
 

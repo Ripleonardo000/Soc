@@ -19,7 +19,7 @@ namespace soc.Services
         // Obtener las ligas disponibles
         public async Task<List<LigaDto>> ObtenerLigasAsync()
         {
-            var url = "https://api.football-data.org/v4/competitions";
+            var url = "https://api.football-data.org/v4/ompetitions";
             var response = await _httpClient.GetStringAsync(url);
             var data = JsonConvert.DeserializeObject<LigasResponse>(response);
 

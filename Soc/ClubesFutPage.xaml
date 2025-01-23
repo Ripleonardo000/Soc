@@ -262,7 +262,7 @@
                         HorizontalOptions="Start"
                         Clicked="OnLeagueClicked"
                         Grid.Column="1">
-                    <Button.Text>Colombia Primera A</Button.Text>
+                    <Button.Text>Colombia Liga BetPlay</Button.Text>
                 </Button>
             </Grid>
 
